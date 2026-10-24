@@ -1,1 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bhimrao Ambedkar</title>
+<meta name="description" content="Babasaheb Dr. Bhimrao Ambedkar — life, education, degrees, struggle, Constitution and legacy. Available in English and Hindi.">
+<meta name="theme-color" content="#050f33">
+</head>
+<body>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Source+Sans+3:wght@400;500;600;700&amp;family=Noto+Serif+Devanagari:wght@600;700;800&amp;family=Noto+Sans+Devanagari:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--ink:#050f33;--navy:#0A1F5C;--navy2:#0d2a7a;--panel:rgba(17,43,120,.62);--line:#2A4BA0;--cream:#F5F2EA;--mute:#B9C6EC;--gold:#F2B90F;--gold2:#ffd966;--head:'Libre Baskerville','Noto Serif Devanagari',Georgia,serif;--body:'Source Sans 3','Noto Sans Devanagari',Arial,sans-serif;--hdr:64px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hdr) + 12px)}
+body{background:var(--ink);color:var(--cream);font-family:var(--body);line-height:1.8;font-size:17px;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{max-width:1120px;margin:0 auto;padding:0 max(18px,env(safe-area-inset-left))}
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),#fff);z-index:200}
+header.top{position:fixed;top:0;left:0;right:0;height:var(--hdr);z-index:150;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 max(16px,env(safe-area-inset-right)) 0 max(16px,env(safe-area-inset-left));background:rgba(5,15,51,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(42,75,160,.5)}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--head);font-weight:800;font-size:19px;text-decoration:none;color:var(--cream);line-height:1.2}
+.brand svg{width:34px;height:34px;flex:none}
+.brand small{display:block;font:600 11px var(--body);color:var(--gold);letter-spacing:.5px}
+.hbtns{display:flex;gap:8px;align-items:center}
+.mbtn{display:flex;align-items:center;gap:8px;background:var(--gold);color:var(--navy);border:0;border-radius:999px;padding:9px 18px;font-weight:700;font-size:15px}
+.mbtn i{display:block;width:18px;height:12px;position:relative}
+.mbtn i::before,.mbtn i::after,.mbtn i b{content:"";position:absolute;left:0;right:0;height:2px;background:var(--navy);border-radius:2px;transition:.25s}
+.mbtn i::before{top:0}.mbtn i b{top:5px}.mbtn i::after{bottom:0}
+.mbtn.open i::before{transform:translateY(5px) rotate(45deg)}.mbtn.open i::after{transform:translateY(-5px) rotate(-45deg)}.mbtn.open i b{opacity:0}
+.dbtn{background:transparent;border:1.5px solid var(--gold);color:var(--gold);border-radius:999px;padding:8px 14px;font-weight:600;font-size:14px;white-space:nowrap}
+#scrim{position:fixed;inset:0;background:rgba(2,8,30,.6);opacity:0;pointer-events:none;transition:.3s;z-index:160}
+#scrim.on{opacity:1;pointer-events:auto}
+#menu{position:fixed;top:0;right:0;bottom:0;width:min(400px,92vw);background:linear-gradient(180deg,#0b2268,#06143f);border-left:1px solid var(--line);z-index:170;transform:translateX(102%);transition:transform .35s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top)}
+#menu.on{transform:none}
+.mh{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid rgba(42,75,160,.6);font-family:var(--head);font-weight:800;font-size:20px;color:var(--gold)}
+.mh button{background:none;border:1px solid var(--line);width:36px;height:36px;border-radius:50%;font-size:20px;line-height:1}
+.mb{overflow:auto;padding:12px 14px calc(24px + env(safe-area-inset-bottom));flex:1}
+.mb h4{font-size:13px;letter-spacing:1px;color:var(--gold);margin:16px 8px 6px;font-weight:700}
+.mb a.ml{display:flex;gap:12px;align-items:center;padding:9px 12px;border-radius:12px;text-decoration:none;font-weight:500;font-size:16px;color:var(--cream)}
+.mb a.ml span{width:26px;font:700 12px var(--body);color:var(--gold);opacity:.9}
+.mb a.ml:hover,.mb a.ml.act{background:rgba(242,185,15,.14);color:var(--gold2)}
+.dg{display:grid;gap:6px;margin:4px 0}
+.dg a{display:flex;justify-content:space-between;gap:10px;align-items:center;text-decoration:none;font-size:14.5px;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(42,75,160,.5)}
+.dg a b{color:var(--gold);font-weight:700;white-space:nowrap}
+.dg a:hover{border-color:var(--gold)}
+.dgall{margin-top:6px;display:block;text-align:center;padding:10px;border-radius:12px;background:var(--gold);color:var(--navy)!important;font-weight:700;text-decoration:none;font-size:15px}
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;padding:calc(var(--hdr) + 36px) 0 56px;display:flex;align-items:center;overflow:hidden;background:radial-gradient(900px 600px at 80% 20%,#16399a55,transparent 70%),linear-gradient(180deg,#071642,#050f33)}
+.hero::before{content:"";position:absolute;inset:0;background:url("images/i-001.jpg") 15% 40%/auto 90% no-repeat;opacity:.13;filter:grayscale(1) contrast(1.1);-webkit-mask-image:linear-gradient(90deg,#000 0,transparent 70%);mask-image:linear-gradient(90deg,#000 0,transparent 70%)}
+.chk{position:absolute;right:-180px;top:-120px;width:640px;height:640px;opacity:.12;animation:spin 90s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hg{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.eb{font-weight:700;letter-spacing:2px;font-size:13px;color:var(--gold);text-transform:uppercase}
+.hero h1{font-family:var(--head);font-weight:800;font-size:clamp(34px,5.6vw,66px);line-height:1.25;margin:10px 0 6px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.dates{color:var(--mute);font-size:18px;margin-bottom:14px}
+.tag{font-family:var(--head);font-size:clamp(20px,2.6vw,28px);color:var(--gold2);margin-bottom:20px;min-height:1.6em}
+.lead{color:#dfe6fb;max-width:600px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
+.btn{display:inline-flex;gap:8px;align-items:center;border-radius:999px;padding:12px 24px;font-weight:700;text-decoration:none;border:2px solid var(--gold);transition:.2s;font-size:16px}
+.btn.p{background:var(--gold);color:var(--navy)}
+.btn.p:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn.g{color:var(--gold)}.btn.g:hover{background:rgba(242,185,15,.14);transform:translateY(-2px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--panel);font-size:14px;color:var(--mute)}
+.chips b{color:var(--gold)}
+.pz{position:relative;justify-self:center;width:min(100%,390px)}
+.pz button{display:block;width:100%;padding:0;border:0;background:none;position:relative;border-radius:22px;transform:rotate(1.6deg);transition:.35s;box-shadow:0 0 0 3px var(--gold),0 30px 70px rgba(0,0,0,.55),0 0 80px rgba(242,185,15,.22)}
+.pz button:hover{transform:rotate(0) scale(1.02)}
+.pz img{border-radius:22px;width:100%;aspect-ratio:820/1457;object-fit:cover}
+.pz button::after{content:"";position:absolute;inset:0;border-radius:22px;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.22) 50%,transparent 60%);background-size:250% 100%;animation:shine 5s infinite}
+@keyframes shine{0%{background-position:200% 0}60%,100%{background-position:-100% 0}}
+.pz .bd{position:absolute;left:50%;top:-16px;transform:translateX(-50%);white-space:nowrap;background:var(--gold);color:var(--navy);font-weight:800;padding:6px 18px;border-radius:999px;font-size:15px;z-index:2;box-shadow:0 6px 16px rgba(0,0,0,.4)}
+.pz p{text-align:center;color:var(--mute);font-size:13px;margin-top:12px}
+.tick{position:absolute;left:0;right:0;bottom:0;background:var(--gold);color:var(--navy);overflow:hidden;white-space:nowrap;font-family:var(--head);font-weight:800;padding:6px 0}
+.tick div{display:inline-block;animation:mq 28s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+.hero{padding-bottom:84px}
+/* sections */
+section.sec{padding:84px 0;position:relative}
+section.sec:nth-of-type(even){background:linear-gradient(180deg,#071642,#081b52)}
+.sh{margin-bottom:34px}
+.sh .n{font:800 13px var(--body);letter-spacing:2px;color:var(--gold)}
+.sh h2{font-family:var(--head);font-weight:800;font-size:clamp(28px,4vw,44px);line-height:1.3;margin-top:4px}
+.sh h2::after{content:"";display:block;width:72px;height:4px;border-radius:4px;background:var(--gold);margin-top:12px}
+.two{display:grid;grid-template-columns:1.4fr 1fr;gap:34px;align-items:start}
+.two.r{grid-template-columns:1fr 1.4fr}
+.txt p{margin-bottom:14px;color:#e6ecff}
+.txt p b,.txt strong{color:var(--gold2)}
+.fig{margin:0 0 18px;border-radius:16px;overflow:hidden;background:var(--panel);border:1px solid var(--line);cursor:zoom-in}
+.fig img{width:100%;transition:transform .5s}
+.fig:hover img{transform:scale(1.04)}
+.fig figcaption{padding:9px 13px;font-size:13.5px;color:var(--mute);line-height:1.5}
+.figs{display:grid;gap:14px}
+.q{border-left:4px solid var(--gold);background:var(--panel);padding:16px 20px;border-radius:0 14px 14px 0;font-family:var(--head);font-size:19px;margin:18px 0;color:var(--cream)}
+.q small{display:block;font:500 13px var(--body);color:var(--mute);margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:var(--gold)}
+.card h3{font-family:var(--head);font-size:19px;color:var(--gold2);margin-bottom:6px;line-height:1.4}
+.card p{font-size:15.5px;color:#dfe6fb;line-height:1.7}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:30px}
+.stat{text-align:center;padding:20px 10px;border-radius:16px;background:var(--panel);border:1px solid var(--line)}
+.stat b{display:block;font:800 clamp(28px,4vw,40px) var(--head);color:var(--gold)}
+.stat span{font-size:14px;color:var(--mute)}
+.lbl{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;font-size:12.5px;border-radius:999px;padding:2px 12px;margin-bottom:8px}
+/* degrees */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tabs button{border:1.5px solid var(--line);background:transparent;border-radius:999px;padding:9px 20px;font-weight:600}
+.tabs button.on{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.pane{display:none}.pane.on{display:block}
+.ladder{display:grid;gap:14px}
+.dc{display:grid;grid-template-columns:96px 1fr;gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel);transition:.3s}
+.dc.hl{box-shadow:0 0 0 3px var(--gold),0 0 40px rgba(242,185,15,.35)}
+.dc .yr{background:linear-gradient(160deg,var(--gold),#d99a00);color:var(--navy);display:flex;align-items:center;justify-content:center;font:800 24px var(--head);padding:10px}
+.dc .bd{padding:16px 20px}
+.dc h3{font-family:var(--head);font-size:21px;line-height:1.4}
+.dc .in{color:var(--gold2);font-weight:600;font-size:15px}
+.dc p{font-size:15.5px;color:#dfe6fb;margin-top:6px;line-height:1.7}
+.note{margin-top:18px;border:1px dashed var(--gold);border-radius:14px;padding:14px 18px;background:rgba(242,185,15,.07);color:#ffeeb0;font-size:15px}
+.pl{display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:start}
+.pl .fig{cursor:zoom-in}
+.srch{width:100%;padding:11px 16px;border-radius:12px;border:1.5px solid var(--line);background:rgba(5,15,51,.7);color:var(--cream);font:inherit;margin-bottom:12px}
+.srch:focus{outline:2px solid var(--gold);border-color:transparent}
+.dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px;max-height:560px;overflow:auto;padding-right:6px}
+.dl div{display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(42,75,160,.5);border-radius:10px;padding:7px 12px;font-size:14.5px}
+.dl b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:13px}
+/* timeline */
+.fl{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.fl button{border:1.5px solid var(--line);background:transparent;border-radius:999px;padding:7px 16px;font-weight:600;font-size:14.5px}
+.fl button.on{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.tl{position:relative;padding-left:30px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:3px;background:linear-gradient(var(--gold),var(--line));border-radius:3px}
+.ev{position:relative;margin-bottom:14px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 18px;cursor:pointer;transition:.25s}
+.ev::before{content:"";position:absolute;left:-29px;top:20px;width:16px;height:16px;border-radius:50%;background:var(--gold);border:3px solid var(--ink)}
+.ev:hover{border-color:var(--gold)}
+.ev h4{font-family:var(--head);font-size:18px;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.ev h4 b{color:var(--gold);font-family:var(--body);font-size:15px}
+.ev p{display:none;margin-top:6px;color:#dfe6fb;font-size:15.5px}
+.ev.open p{display:block}
+.ev.hide{display:none}
+/* gallery */
+.gal{columns:3 230px;column-gap:14px}
+.gal .fig{break-inside:avoid;margin-bottom:14px}
+/* books */
+.bl{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;max-height:600px;overflow:auto;padding-right:6px}
+.bl div{padding:9px 14px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(42,75,160,.5);font-size:15px;display:flex;gap:10px}
+.bl b{color:var(--gold);flex:none;min-width:24px}
+/* quotes */
+.qb{position:relative;text-align:center;padding:48px 28px;border-radius:24px;background:linear-gradient(135deg,#112b78,#0a1f5c);border:1px solid var(--line);margin-bottom:28px}
+.qb p{font-family:var(--head);font-weight:700;font-size:clamp(21px,3vw,32px);line-height:1.6;color:var(--cream);min-height:3.2em;transition:opacity .4s}
+.qb .mk{font:800 80px/0.5 var(--head);color:var(--gold);display:block;height:30px}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:18px}
+.dots button{width:11px;height:11px;border-radius:50%;border:0;background:var(--line);padding:0}
+.dots button.on{background:var(--gold);transform:scale(1.3)}
+/* jay */
+.jay{text-align:center;padding:90px 0;background:radial-gradient(600px 300px at 50% 0,#17399a66,transparent),var(--navy)}
+.jay h2{font-family:var(--head);font-weight:800;font-size:clamp(34px,7vw,76px);line-height:1.3}
+.jay h2:nth-of-type(2){color:var(--gold)}
+footer{background:#030a24;padding:46px 0 calc(34px + env(safe-area-inset-bottom));border-top:1px solid var(--line);text-align:center}
+.soc{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:16px 0 20px}
+.soc a{display:flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;border:1.5px solid var(--gold);text-decoration:none;font-weight:700;color:var(--gold);transition:.2s}
+.soc a:hover{background:var(--gold);color:var(--navy);transform:translateY(-2px)}
+.soc svg{width:20px;height:20px;fill:currentColor}
+footer small{display:block;color:var(--mute);font-size:13px;max-width:720px;margin:6px auto;line-height:1.7}
+#top{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));width:46px;height:46px;border-radius:50%;border:0;background:var(--gold);color:var(--navy);font-size:22px;font-weight:800;z-index:120;opacity:0;pointer-events:none;transition:.3s;box-shadow:0 8px 20px rgba(0,0,0,.4)}
+#top.on{opacity:1;pointer-events:auto}
+/* lightbox */
+#lb{position:fixed;inset:0;background:rgba(2,6,22,.94);z-index:300;display:none;flex-direction:column;align-items:center;justify-content:center;padding:20px}
+#lb.on{display:flex}
+#lb img{max-height:78vh;max-width:94vw;border-radius:10px;object-fit:contain}
+#lb p{margin-top:14px;max-width:760px;text-align:center;color:var(--mute);font-size:15px}
+#lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:46px;height:46px;border-radius:50%;font-size:24px}
+#lb .x{top:calc(16px + env(safe-area-inset-top));right:16px}#lb .pv{left:14px;top:50%}#lb .nx{right:14px;top:50%}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
 
+.lang{display:flex;border:1.5px solid var(--gold);border-radius:999px;overflow:hidden}
+.lang button{background:transparent;border:0;padding:7px 13px;font-weight:700;font-size:14px;color:var(--gold)}
+.lang button.on{background:var(--gold);color:var(--navy)}
+.dcd{display:flex;flex-direction:column;gap:6px}
+.dcd .dt{font:700 13px var(--body);color:var(--gold);letter-spacing:1px}
+.dcd .cd{margin-top:6px;display:inline-block;align-self:flex-start;background:var(--gold);color:var(--navy);font-weight:800;border-radius:999px;padding:3px 14px;font-size:14px}
+.dcd.today{box-shadow:0 0 0 3px var(--gold),0 0 40px rgba(242,185,15,.3)}
+.quiz{max-width:760px;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:28px}
+.quiz .qh{display:flex;justify-content:space-between;color:var(--mute);font-size:14px;margin-bottom:10px}
+.quiz .qbar{height:6px;border-radius:6px;background:rgba(255,255,255,.12);overflow:hidden;margin-bottom:18px}
+.quiz .qbar i{display:block;height:100%;background:var(--gold);transition:width .4s}
+.quiz h3{font-family:var(--head);font-size:21px;line-height:1.5;margin-bottom:16px}
+.quiz .op{display:block;width:100%;text-align:left;margin-bottom:10px;padding:12px 16px;border-radius:12px;border:1.5px solid var(--line);background:rgba(5,15,51,.5);font-size:16px;transition:.2s}
+.quiz .op:hover:not(:disabled){border-color:var(--gold);background:rgba(242,185,15,.1)}
+.quiz .op.ok{background:#14532d;border-color:#4ade80}
+.quiz .op.no{background:#7f1d1d;border-color:#f87171}
+.quiz .ex{margin:10px 0 14px;color:#dfe6fb;font-size:15.5px}
+.quiz .nb{margin-top:6px}
+.quiz .big{font:800 56px var(--head);color:var(--gold);text-align:center}
+.quiz .res{text-align:center}
+@media(max-width:860px){
+ .hg{grid-template-columns:1fr;gap:30px}
+ .pz{order:-1;width:min(78%,330px)}
+ .two,.two.r,.pl{grid-template-columns:1fr}
+ .hero{align-items:flex-start}
+ .dbtn{display:none}
+ .brand small{display:none}
+ .dc{grid-template-columns:70px 1fr}.dc .yr{font-size:18px}
+ section.sec{padding:60px 0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style>
+<div id="prog"></div>
+<header class="top">
+<a aria-label="होम" class="brand" href="#home">
+<svg viewbox="0 0 64 64"><circle cx="32" cy="32" fill="none" r="29" stroke="#F2B90F" stroke-width="4"></circle><circle cx="32" cy="32" fill="#F2B90F" r="5"></circle><g id="spk" stroke="#F2B90F" stroke-width="2"></g></svg>
+<span data-en="Babasaheb Ambedkar&lt;small&gt;Jai Bhim · Jai Bharat · Jai Samvidhan&lt;/small&gt;" data-hi="बाबासाहेब आम्बेडकर&lt;small&gt;जय भीम · जय भारत · जय संविधान&lt;/small&gt;">Babasaheb Ambedkar<small>Jai Bhim · Jai Bharat · Jai Samvidhan</small></span>
+</a>
+<div class="hbtns">
+<div aria-label="Language" class="lang" role="group"><button class="on" data-l="en" data-skip="">EN</button><button data-l="hi" data-skip="">हिं</button></div>
+<button class="dbtn" data-en="🎓 Degrees" data-hi="🎓 डिग्रियाँ" id="dBtn">🎓 Degrees</button>
+<button aria-controls="menu" aria-expanded="false" class="mbtn" data-en="&lt;i&gt;&lt;b&gt;&lt;/b&gt;&lt;/i&gt; Menu" data-hi="&lt;i&gt;&lt;b&gt;&lt;/b&gt;&lt;/i&gt; मेन्यू" id="menuBtn"><i><b></b></i> Menu</button>
+</div>
+</header>
+<div id="scrim"></div>
+<nav aria-label="मुख्य मेन्यू" id="menu">
+<div class="mh"><span data-en="Menu" data-hi="मेन्यू">Menu</span><button aria-label="बंद करें" id="mClose">×</button></div>
+<div class="mb">
+<h4 data-en="The Whole Website" data-hi="पूरी वेबसाइट">The Whole Website</h4>
+<div id="mlist"></div>
+<h4 data-en="🎓 Academic Degrees (Verified)" data-hi="🎓 शैक्षिक डिग्रियाँ (सत्यापित)">🎓 Academic Degrees (Verified)</h4>
+<div class="dg" id="mdeg"></div>
+<a class="dgall" data-en="🏅 See the 32-Degrees Poster" data-hi="🏅 32 डिग्रियों वाला पोस्टर देखें" data-pane="poster" href="#degrees">🏅 See the 32-Degrees Poster</a>
+<h4 data-en="Social" data-hi="सोशल">Social</h4>
+<div id="msoc"></div>
+</div>
+</nav>
+<main>
+<section class="hero" id="home">
+<svg aria-hidden="true" class="chk" viewbox="0 0 640 640"><circle cx="320" cy="320" fill="none" r="296" stroke="#F2B90F" stroke-width="10"></circle><circle cx="320" cy="320" fill="#F2B90F" r="36"></circle><g id="spk2" stroke="#F2B90F" stroke-linecap="round" stroke-width="6"></g></svg>
+<div class="wrap hg">
+<div>
+<div class="eb" data-en="Indian Polymath · Father of the Constitution" data-hi="भारतीय बहुज्ञ · संविधान के जनक">Indian Polymath · Father of the Constitution</div>
+<h1 data-en="Babasaheb &lt;em&gt;Dr. Bhimrao&lt;/em&gt; Ambedkar" data-hi="बाबासाहेब &lt;em&gt;डॉ. भीमराव&lt;/em&gt; आम्बेडकर">Babasaheb <em>Dr. Bhimrao</em> Ambedkar</h1>
+<div class="dates" data-en="14 April 1891 – 6 December 1956" data-hi="14 अप्रैल 1891 – 6 दिसंबर 1956">14 April 1891 – 6 December 1956</div>
+<div aria-live="off" class="tag" id="typed"></div>
+<p class="lead" data-en="Jurist, economist, politician, writer and social reformer. Independent India’s first Law and Justice Minister and chairman of the Constitution’s Drafting Committee. Inspirer of the Dalit Buddhist movement, and awarded the Bharat Ratna posthumously in 1990." data-hi="विधिवेत्ता, अर्थशास्त्री, राजनीतिज्ञ, लेखक और समाज-सुधारक। स्वतंत्र भारत के प्रथम विधि एवं न्याय मंत्री और संविधान की मसौदा समिति के अध्यक्ष। दलित बौद्ध आंदोलन के प्रेरक और 1990 में मरणोपरांत भारत रत्न।">Jurist, economist, politician, writer and social reformer. Independent India’s first Law and Justice Minister and chairman of the Constitution’s Drafting Committee. Inspirer of the Dalit Buddhist movement, and awarded the Bharat Ratna posthumously in 1990.</p>
+<div class="cta" data-en='
+        &lt;a class="btn p" href="#intro"&gt;Read the Biography →&lt;/a&gt;
+        &lt;a class="btn g" href="#degrees"&gt;🎓 View Degrees&lt;/a&gt;
+        &lt;a class="btn g" href="#timeline"&gt;Timeline&lt;/a&gt;
+      ' data-hi='
+&lt;a class="btn p" href="#intro"&gt;जीवनी पढ़ें →&lt;/a&gt;
+&lt;a class="btn g" href="#degrees"&gt;🎓 डिग्रियाँ देखें&lt;/a&gt;
+&lt;a class="btn g" href="#timeline"&gt;समयरेखा&lt;/a&gt;
+'>
+<a class="btn p" href="#intro">Read the Biography →</a>
+<a class="btn g" href="#degrees">🎓 View Degrees</a>
+<a class="btn g" href="#timeline">Timeline</a>
+</div>
+<div class="chips" data-en="&lt;span&gt;&lt;b&gt;7&lt;/b&gt; verified degrees&lt;/span&gt;&lt;span&gt;&lt;b&gt;50,000+&lt;/b&gt; books in his library&lt;/span&gt;&lt;span&gt;&lt;b&gt;~60&lt;/b&gt; constitutions studied&lt;/span&gt;" data-hi="&lt;span&gt;&lt;b&gt;7&lt;/b&gt; सत्यापित उपाधियाँ&lt;/span&gt;&lt;span&gt;&lt;b&gt;50,000+&lt;/b&gt; पुस्तकों का पुस्तकालय&lt;/span&gt;&lt;span&gt;&lt;b&gt;~60&lt;/b&gt; देशों के संविधान का अध्ययन&lt;/span&gt;"><span><b>7</b> verified degrees</span><span><b>50,000+</b> books in his library</span><span><b>~60</b> constitutions studied</span></div>
+</div>
+<div class="pz">
+<span class="bd" data-en="🎓 32 Degrees" data-hi="🎓 32 डिग्रियाँ">🎓 32 Degrees</span>
+<button aria-label="डिग्री पोस्टर बड़ा देखें" id="posterBtn"><img alt="डॉ. भीमराव आम्बेडकर की 32 डिग्रियों की सूची वाला पोस्टर" src="images/degrees.jpg"/></button>
+<p data-en='Tap the poster to enlarge · verified list &lt;a href="#degrees" style="color:var(--gold)"&gt;here&lt;/a&gt;' data-hi='पोस्टर पर टैप करें · सत्यापित सूची &lt;a href="#degrees" style="color:var(--gold)"&gt;यहाँ&lt;/a&gt;'>Tap the poster to enlarge · verified list <a href="#degrees" style="color:var(--gold)">here</a></p>
+</div>
+</div>
+<div aria-hidden="true" class="tick"><div id="tk"></div></div>
+</section>
+<section class="sec" data-t="परिचय" id="intro">
+<div class="wrap">
+<div class="sh rv"><div class="n">01</div><h2 data-en="Introduction" data-hi="परिचय">Introduction</h2></div>
+<div class="two">
+<div class="txt rv">
+<p data-en="Bhimrao Ramji Ambedkar (14 April 1891 – 6 December 1956), popularly known as Dr. Babasaheb Ambedkar, was an Indian &lt;b&gt;polymath, jurist, economist, politician, writer and social reformer&lt;/b&gt;. He inspired the Dalit Buddhist movement and campaigned against social discrimination towards the untouchables (Dalits). He also supported the rights of workers, farmers and women." data-hi="भीमराव रामजी आंबेडकर (14 अप्रैल 1891 – 6 दिसंबर 1956), डॉ. बाबासाहेब आंबेडकर नाम से लोकप्रिय, भारतीय &lt;b&gt;बहुज्ञ, विधिवेत्ता, अर्थशास्त्री, राजनीतिज्ञ, लेखक और समाज-सुधारक&lt;/b&gt; थे। उन्होंने दलित बौद्ध आंदोलन को प्रेरित किया और अछूतों (दलितों) के प्रति होने वाले सामाजिक भेदभाव के विरुद्ध अभियान चलाया। उन्होंने श्रमिकों, किसानों और महिलाओं के अधिकारों का भी समर्थन किया।">Bhimrao Ramji Ambedkar (14 April 1891 – 6 December 1956), popularly known as Dr. Babasaheb Ambedkar, was an Indian <b>polymath, jurist, economist, politician, writer and social reformer</b>. He inspired the Dalit Buddhist movement and campaigned against social discrimination towards the untouchables (Dalits). He also supported the rights of workers, farmers and women.</p>
+<p data-en="He was independent India’s first Law and Justice Minister, the father of the Indian Constitution and one of the architects of the Republic of India. He earned doctorates in economics from both Columbia University and the London School of Economics." data-hi="वे स्वतंत्र भारत के प्रथम विधि एवं न्याय मंत्री, भारतीय संविधान के जनक और भारत गणराज्य के निर्माताओं में से एक थे। उन्होंने कोलंबिया विश्वविद्यालय और लंदन स्कूल ऑफ़ इकोनॉमिक्स दोनों से अर्थशास्त्र में डॉक्टरेट की उपाधियाँ प्राप्त कीं।">He was independent India’s first Law and Justice Minister, the father of the Indian Constitution and one of the architects of the Republic of India. He earned doctorates in economics from both Columbia University and the London School of Economics.</p>
+<p data-en="Early in his career he was a professor of economics and also practised law; the later part of his life was devoted largely to politics. Fed up with the evils of Hindu society and untouchability, he embraced Buddhism in 1956. In 1990 he was posthumously awarded the &lt;b&gt;Bharat Ratna&lt;/b&gt;." data-hi="व्यावसायिक जीवन के आरंभ में वे अर्थशास्त्र के प्रोफेसर रहे और वकालत भी की, बाद का जीवन राजनीतिक गतिविधियों में बीता। हिंदू धर्म की कुरीतियों और छुआछूत से तंग आकर 1956 में उन्होंने बौद्ध धर्म अपना लिया। 1990 में उन्हें &lt;b&gt;भारत रत्न&lt;/b&gt; से मरणोपरांत सम्मानित किया गया।">Early in his career he was a professor of economics and also practised law; the later part of his life was devoted largely to politics. Fed up with the evils of Hindu society and untouchability, he embraced Buddhism in 1956. In 1990 he was posthumously awarded the <b>Bharat Ratna</b>.</p>
+<p data-en="His birthday on 14 April is celebrated as &lt;b&gt;Ambedkar Jayanti&lt;/b&gt;, and 6 December is observed as &lt;b&gt;Mahaparinirvan Diwas&lt;/b&gt;." data-hi="14 अप्रैल को उनका जन्मदिन &lt;b&gt;आम्बेडकर जयंती&lt;/b&gt; के रूप में और 6 दिसंबर को &lt;b&gt;महापरिनिर्वाण दिवस&lt;/b&gt; के रूप में मनाया जाता है।">His birthday on 14 April is celebrated as <b>Ambedkar Jayanti</b>, and 6 December is observed as <b>Mahaparinirvan Diwas</b>.</p>
+<div class="q" data-en="“Educate, Organise, Agitate.”&lt;small&gt;— Babasaheb’s message to his followers&lt;/small&gt;" data-hi="“शिक्षित बनो, संघटित बनो, संघर्ष करो।”&lt;small&gt;— बाबासाहेब का अनुयायियों को संदेश&lt;/small&gt;">“Educate, Organise, Agitate.”<small>— Babasaheb’s message to his followers</small></div>
+</div>
+<div class="figs rv">
+<figure class="fig"><img alt="डॉ. आम्बेडकर" loading="lazy" src="images/i-001.jpg"/><figcaption data-en="Dr. Bhimrao Ambedkar — photograph from after 1948" data-hi="डॉ. भीमराव आम्बेडकर — 1948 के बाद का छायाचित्र">Dr. Bhimrao Ambedkar — photograph from after 1948</figcaption></figure>
+<figure class="fig"><img alt="हस्ताक्षर" loading="lazy" src="images/i-007.jpg"/><figcaption data-en="Babasaheb’s signature" data-hi="बाबासाहेब के हस्ताक्षर">Babasaheb’s signature</figcaption></figure>
+</div>
+</div>
+<div class="stats rv">
+<div class="stat"><b data-c="14">0</b><span data-en="th and last child" data-hi="वीं व अंतिम संतान">th and last child</span></div>
+<div class="stat"><b data-c="50000" data-p="+">0</b><span data-en="books in his private library" data-hi="पुस्तकों का निजी पुस्तकालय">books in his private library</span></div>
+<div class="stat"><b data-c="11">0</b><span data-en="languages known" data-hi="भाषाओं का ज्ञान">languages known</span></div>
+<div class="stat"><b data-c="5">0</b><span data-en="newspapers and journals" data-hi="पत्र-पत्रिकाएँ">newspapers and journals</span></div>
+<div class="stat"><b data-c="1100000" data-p="+">0</b><span data-en="people given diksha in 3 days" data-hi="लोगों को 3 दिन में दीक्षा">people given diksha in 3 days</span></div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="प्रारंभिक जीवन" id="early">
+<div class="wrap">
+<div class="sh rv"><div class="n">02</div><h2 data-en="Early Life" data-hi="प्रारंभिक जीवन">Early Life</h2></div>
+<div class="two r">
+<div class="figs rv">
+<figure class="fig"><img alt="रमाबाई" loading="lazy" src="images/i-000.jpg"/><figcaption data-en="Ramabai Ambedkar, Babasaheb’s wife" data-hi="रमाबाई आम्बेडकर, बाबासाहेब की पत्नी">Ramabai Ambedkar, Babasaheb’s wife</figcaption></figure>
+</div>
+<div class="txt rv">
+<p data-en="Ambedkar was born on &lt;b&gt;14 April 1891&lt;/b&gt; in the Mhow military cantonment in the Central Provinces of British India (now Madhya Pradesh). He was the &lt;b&gt;14th and last child&lt;/b&gt; of Ramji Maloji Sakpal and Bhimabai. The family, of Marathi origin, followed the Kabir Panth and came from Ambadawe village in Ratnagiri district." data-hi="आंबेडकर का जन्म &lt;b&gt;14 अप्रैल 1891&lt;/b&gt; को ब्रिटिश भारत के मध्य भारत प्रांत (अब मध्य प्रदेश) में स्थित &lt;b&gt;महू&lt;/b&gt; नगर सैन्य छावनी में हुआ। वे रामजी मालोजी सकपाल और भीमाबाई की &lt;b&gt;14वीं व अंतिम संतान&lt;/b&gt; थे। परिवार कबीर पंथ को मानने वाला मराठी मूल का था और रत्नागिरी जिले के आंबडवे गाँव का निवासी था।">Ambedkar was born on <b>14 April 1891</b> in the Mhow military cantonment in the Central Provinces of British India (now Madhya Pradesh). He was the <b>14th and last child</b> of Ramji Maloji Sakpal and Bhimabai. The family, of Marathi origin, followed the Kabir Panth and came from Ambadawe village in Ratnagiri district.</p>
+<p data-en="He belonged to the Hindu Mahar caste, then considered untouchable, and so faced deep social and economic discrimination. His father, Ramji Sakpal, served in the Indian Army at the Mhow cantonment and rose to the rank of subedar." data-hi="वे हिंदू महार जाति से थे, जो तब अछूत कही जाती थी, इसलिए उन्हें गहरा सामाजिक और आर्थिक भेदभाव सहना पड़ा। पिता रामजी सकपाल भारतीय सेना की महू छावनी में सूबेदार के पद तक पहुँचे थे।">He belonged to the Hindu Mahar caste, then considered untouchable, and so faced deep social and economic discrimination. His father, Ramji Sakpal, served in the Indian Army at the Mhow cantonment and rose to the rank of subedar.</p>
+<p data-en="On &lt;b&gt;7 November 1900&lt;/b&gt; his name was entered at the Government High School, Satara, as ‘Bhiva Ramji Ambadawekar’. Later a teacher, Krishna Keshav Ambedkar, out of affection gave him his own surname ‘Ambedkar’. He has been known by that name ever since. In memory of that day, &lt;b&gt;7 November is celebrated in Maharashtra as “Students’ Day”&lt;/b&gt;." data-hi="&lt;b&gt;7 नवम्बर 1900&lt;/b&gt; को सातारा के गवर्न्मेण्ट हाइस्कूल में उनका नाम ‘भिवा रामजी आंबडवेकर’ दर्ज हुआ। बाद में एक शिक्षक कृष्णा केशव आंबेडकर ने स्नेहवश अपना ‘आंबेडकर’ उपनाम उन्हें दे दिया। तब से वे इसी नाम से जाने जाते हैं। इसी दिन की याद में &lt;b&gt;7 नवंबर को महाराष्ट्र में “विद्यार्थी दिवस”&lt;/b&gt; मनाया जाता है।">On <b>7 November 1900</b> his name was entered at the Government High School, Satara, as ‘Bhiva Ramji Ambadawekar’. Later a teacher, Krishna Keshav Ambedkar, out of affection gave him his own surname ‘Ambedkar’. He has been known by that name ever since. In memory of that day, <b>7 November is celebrated in Maharashtra as “Students’ Day”</b>.</p>
+<p data-en="In 1896, when he was five, his mother died and his aunt Mirabai looked after him. In April 1906, at about 15, he was married to nine-year-old Ramabai. When he passed the fourth English standard, his success was publicly celebrated among the untouchables, and Dada Keluskar presented him with a ‘Life of the Buddha’, through which he first learnt about the Buddha and Buddhism." data-hi="1896 में, जब वे पाँच वर्ष के थे, उनकी माँ का निधन हुआ और बुआ मीराबाई ने उन्हें सँभाला। अप्रैल 1906 में, लगभग 15 वर्ष की उम्र में, नौ वर्ष की रमाबाई से उनका विवाह हुआ। अंग्रेज़ी चौथी कक्षा पास करने पर अछूतों में उनकी सफलता का सार्वजनिक समारोह हुआ और दादा केलुस्कर ने उन्हें ‘बुद्ध की जीवनी’ भेंट की, जिससे उन्होंने पहली बार बुद्ध और बौद्ध धर्म को जाना।">In 1896, when he was five, his mother died and his aunt Mirabai looked after him. In April 1906, at about 15, he was married to nine-year-old Ramabai. When he passed the fourth English standard, his success was publicly celebrated among the untouchables, and Dada Keluskar presented him with a ‘Life of the Buddha’, through which he first learnt about the Buddha and Buddhism.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="शिक्षा" id="edu">
+<div class="wrap">
+<div class="sh rv"><div class="n">03</div><h2 data-en="Education" data-hi="शिक्षा">Education</h2></div>
+<div class="two">
+<div class="txt rv">
+<span class="lbl" data-en="Mumbai" data-hi="मुंबई">Mumbai</span>
+<p data-en="In 1897 the family moved to Mumbai, where he studied at the Government High School on Elphinstone Road. He passed matriculation in 1907 and the next year entered Elphinstone College (affiliated to Bombay University) — the first from his community to reach that level. In 1912 he earned his &lt;b&gt;B.A.&lt;/b&gt; in economics and political science." data-hi="1897 में परिवार मुंबई आया और उन्होंने एल्फिंस्टन रोड के शासकीय हाईस्कूल में पढ़ाई की। 1907 में मैट्रिक पास की और अगले वर्ष एल्फिंस्टन कॉलेज (बॉम्बे विश्वविद्यालय से संबद्ध) में प्रवेश लिया — अपने समुदाय से इस स्तर तक पहुँचने वाले वे पहले व्यक्ति थे। 1912 में अर्थशास्त्र और राजनीति विज्ञान में &lt;b&gt;बी.ए.&lt;/b&gt; किया।">In 1897 the family moved to Mumbai, where he studied at the Government High School on Elphinstone Road. He passed matriculation in 1907 and the next year entered Elphinstone College (affiliated to Bombay University) — the first from his community to reach that level. In 1912 he earned his <b>B.A.</b> in economics and political science.</p>
+<span class="lbl" data-en="Columbia University, New York" data-hi="कोलंबिया विश्वविद्यालय, न्यूयॉर्क">Columbia University, New York</span>
+<p data-en="In 1913, aged 22, he went to the USA on a scholarship ($11.50 a month) from Sayajirao Gaekwad of Baroda. In June 1915 he earned his &lt;b&gt;M.A.&lt;/b&gt; — economics as the major, with sociology, history, philosophy and anthropology. He was influenced by John Dewey and his work on democracy. In 1916 he completed a second thesis, ‘National Dividend of India’, and the Ph.D. thesis ‘Evolution of Provincial Finance in British India’ (degree formally conferred in 1927). He finished a three-year scholarship’s course in just two years." data-hi="1913 में, 22 वर्ष की आयु में, बड़ौदा के सयाजीराव गायकवाड़ की छात्रवृत्ति (11.50 डॉलर प्रति माह) पर वे अमेरिका गए। जून 1915 में उन्होंने &lt;b&gt;एम.ए.&lt;/b&gt; किया — मुख्य विषय अर्थशास्त्र, साथ में समाजशास्त्र, इतिहास, दर्शनशास्त्र और मानव विज्ञान। वे जॉन डेवी और लोकतंत्र पर उनके काम से प्रभावित थे। 1916 में ‘भारत का राष्ट्रीय लाभांश’ पर दूसरा शोध और ‘ब्रिटिश भारत में प्रांतीय वित्त का विकास’ पर पीएच.डी. शोध पूरा हुआ (औपचारिक उपाधि 1927 में)। 3 वर्ष की छात्रवृत्ति का काम उन्होंने केवल 2 वर्षों में पूरा किया।">In 1913, aged 22, he went to the USA on a scholarship ($11.50 a month) from Sayajirao Gaekwad of Baroda. In June 1915 he earned his <b>M.A.</b> — economics as the major, with sociology, history, philosophy and anthropology. He was influenced by John Dewey and his work on democracy. In 1916 he completed a second thesis, ‘National Dividend of India’, and the Ph.D. thesis ‘Evolution of Provincial Finance in British India’ (degree formally conferred in 1927). He finished a three-year scholarship’s course in just two years.</p>
+<span class="lbl" data-en="London" data-hi="लंदन">London</span>
+<p data-en="In October 1916 he went to London — the Bar course at Gray’s Inn and a doctorate at the London School of Economics. In June 1917 he had to return when his scholarship ended; on the way back, the ship carrying his books was sunk by a German submarine torpedo. In 1920, with help from Shahu Maharaj and friends, he went to England again and earned his &lt;b&gt;M.Sc.&lt;/b&gt; in 1921, was called as &lt;b&gt;Barrister-at-Law&lt;/b&gt; in 1922 and received his &lt;b&gt;D.Sc.&lt;/b&gt; in 1923 (thesis: “The Problem of the Rupee”). On the way home he also studied for three months at the University of Bonn in Germany." data-hi="अक्टूबर 1916 में वे लंदन गए — ग्रेज़ इन में बैरिस्टर कोर्स और लंदन स्कूल ऑफ इकोनॉमिक्स में डॉक्टरेट। जून 1917 में छात्रवृत्ति समाप्त होने पर लौटना पड़ा; लौटते समय उनके पुस्तक संग्रह वाला जहाज़ जर्मन पनडुब्बी के टारपीडो से डूब गया। 1920 में शाहू महाराज और मित्रों की मदद से वे फिर इंग्लैंड गए और 1921 में &lt;b&gt;एम.एससी.&lt;/b&gt;, 1922 में &lt;b&gt;बैरिस्टर-एट-लॉ&lt;/b&gt; और 1923 में &lt;b&gt;डी.एससी.&lt;/b&gt; हासिल की। (थीसिस: “द प्रॉब्लम ऑफ द रुपी”) वापसी में वे तीन महीने जर्मनी के बॉन विश्वविद्यालय में भी पढ़े।">In October 1916 he went to London — the Bar course at Gray’s Inn and a doctorate at the London School of Economics. In June 1917 he had to return when his scholarship ended; on the way back, the ship carrying his books was sunk by a German submarine torpedo. In 1920, with help from Shahu Maharaj and friends, he went to England again and earned his <b>M.Sc.</b> in 1921, was called as <b>Barrister-at-Law</b> in 1922 and received his <b>D.Sc.</b> in 1923 (thesis: “The Problem of the Rupee”). On the way home he also studied for three months at the University of Bonn in Germany.</p>
+</div>
+<div class="figs rv">
+<figure class="fig"><img alt="कोलंबिया" loading="lazy" src="images/i-003.jpg"/><figcaption data-en="As a student at Columbia University (1915–17)" data-hi="कोलंबिया विश्वविद्यालय में छात्र के रूप में (1915–17)">As a student at Columbia University (1915–17)</figcaption></figure>
+<figure class="fig"><img alt="LSE" loading="lazy" src="images/i-008.jpg"/><figcaption data-en="With professors and friends at the London School of Economics, 1916–17" data-hi="लंदन स्कूल ऑफ इकोनॉमिक्स के प्रोफेसरों और दोस्तों के साथ, 1916–17">With professors and friends at the London School of Economics, 1916–17</figcaption></figure>
+<figure class="fig"><img alt="बैरिस्टर" loading="lazy" src="images/i-009.jpg"/><figcaption data-en="As a barrister, 1922" data-hi="1922 में एक बैरिस्टर के रूप में">As a barrister, 1922</figcaption></figure>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="डिग्रियाँ" id="degrees">
+<div class="wrap">
+<div class="sh rv"><div class="n">04</div><h2 data-en="Degrees and Honours" data-hi="डिग्रियाँ और उपाधियाँ">Degrees and Honours</h2></div>
+<div class="tabs rv" role="tablist">
+<button class="on" data-en="✅ Verified (per the article)" data-hi="✅ सत्यापित (लेख के अनुसार)" data-pane="verified">✅ Verified (per the article)</button>
+<button data-en="🏅 The Poster’s 32 Degrees" data-hi="🏅 पोस्टर की 32 डिग्रियाँ" data-pane="poster">🏅 The Poster’s 32 Degrees</button>
+</div>
+<div class="pane on" id="p-verified">
+<div class="ladder" id="ladder"></div>
+<div class="note" data-en="&lt;b&gt;Note:&lt;/b&gt; The list above is of the degrees recorded in this biographical article — earned: B.A., M.A., Ph.D., M.Sc., D.Sc. and Barrister-at-Law; honorary: LL.D. and D.Litt. The claim of “32 degrees” circulates on social media; it is not found in this article, so the poster is shown separately in its own tab." data-hi="&lt;b&gt;सूचना:&lt;/b&gt; ऊपर की सूची इस जीवनी लेख में दर्ज उपाधियों की है — 5 अर्जित (बी.ए., एम.ए., एम.एससी., डी.एससी., बैरिस्टर-एट-लॉ; साथ में पीएच.डी.) और 2 सम्मानित (एलएल.डी., डी.लिट.)। “32 डिग्रियाँ” का दावा सोशल मीडिया पर प्रचलित है; वह इस लेख में नहीं मिलता, इसलिए पोस्टर अलग टैब में दिखाया गया है।"><b>Note:</b> The list above is of the degrees recorded in this biographical article — earned: B.A., M.A., Ph.D., M.Sc., D.Sc. and Barrister-at-Law; honorary: LL.D. and D.Litt. The claim of “32 degrees” circulates on social media; it is not found in this article, so the poster is shown separately in its own tab.</div>
+</div>
+<div class="pane" id="p-poster">
+<div class="pl">
+<figure class="fig"><img alt="32 डिग्रियों का पोस्टर" loading="lazy" src="images/degrees.jpg"/><figcaption data-en="“Tribute to Dr. Bhimrao Ambedkar on Constitution Day — the great personality of the nation who earned 32 degrees”" data-hi="“संविधान दिवस पर डॉ. भीमराव अंबेडकर को श्रद्धांजलि — 32 डिग्रियाँ हासिल करने वाली देश की महान शख्सियत”">“Tribute to Dr. Bhimrao Ambedkar on Constitution Day — the great personality of the nation who earned 32 degrees”</figcaption></figure>
+<div>
+<input class="srch" id="dsearch" placeholder="🔎 पोस्टर की सूची में खोजें (जैसे: Law, Economics, Sociology)"/>
+<div class="dl" id="dlist"></div>
+<div class="note" data-en="This list is taken from a popular graphic and is not verified by the source article." data-hi="पोस्टर की यह सूची प्रचलित ग्राफ़िक से ली गई है और इस लेख के स्रोत से सत्यापित नहीं है।">This list is taken from a popular graphic and is not verified by the source article.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="छुआछूत के विरुद्ध संघर्ष" id="struggle">
+<div class="wrap">
+<div class="sh rv"><div class="n">05</div><h2 data-en="The Fight Against Untouchability" data-hi="छुआछूत के विरुद्ध संघर्ष">The Fight Against Untouchability</h2></div>
+<div class="two">
+<div class="txt rv">
+<div class="q" data-en="“Untouchability is worse than slavery.”&lt;small&gt;— Dr. Ambedkar&lt;/small&gt;" data-hi="“छुआछूत गुलामी से भी बदतर है।”&lt;small&gt;— डॉ. आंबेडकर&lt;/small&gt;">“Untouchability is worse than slavery.”<small>— Dr. Ambedkar</small></div>
+<p data-en="Even as Military Secretary to the Maharaja of Baroda he had to quit soon because of caste discrimination (described in his autobiography &lt;b&gt;‘Waiting for a Visa’&lt;/b&gt;). His attempts as an accountant, private tutor and investment consultant failed once clients learned he was an untouchable. In 1918 he became professor of political economy at Sydenham College, but other professors objected to his sharing the drinking-water pot." data-hi="बड़ौदा राज्य के सैन्य सचिव बनने पर भी जातिगत भेदभाव के कारण उन्हें जल्द नौकरी छोड़नी पड़ी (वर्णन: आत्मकथा &lt;b&gt;‘वेटिंग फॉर अ वीज़ा’&lt;/b&gt;)। लेखाकार, निजी शिक्षक और निवेश-परामर्श के प्रयास भी तब विफल हुए जब ग्राहकों को पता चला कि वे अछूत हैं। 1918 में वे सिडेनहम कॉलेज में राजनीतिक अर्थशास्त्र के प्रोफेसर बने, पर अन्य प्रोफेसरों ने उनके साथ पानी का बर्तन साझा करने पर आपत्ति की।">Even as Military Secretary to the Maharaja of Baroda he had to quit soon because of caste discrimination (described in his autobiography <b>‘Waiting for a Visa’</b>). His attempts as an accountant, private tutor and investment consultant failed once clients learned he was an untouchable. In 1918 he became professor of political economy at Sydenham College, but other professors objected to his sharing the drinking-water pot.</p>
+<p data-en="In &lt;b&gt;1920&lt;/b&gt; he launched the weekly &lt;b&gt;‘Mooknayak’&lt;/b&gt;. Shahu Maharaj of Kolhapur was deeply impressed. Practising at the Bombay High Court, he founded the &lt;b&gt;‘Bahishkrit Hitkarini Sabha’&lt;/b&gt;, aimed at education and socio-economic uplift." data-hi="&lt;b&gt;1920&lt;/b&gt; में उन्होंने साप्ताहिक &lt;b&gt;‘मूकनायक’&lt;/b&gt; शुरू किया। कोल्हापुर के शाहू महाराज उनसे बहुत प्रभावित हुए। बॉम्बे उच्च न्यायालय में वकालत करते हुए उन्होंने &lt;b&gt;‘बहिष्कृत हितकारिणी सभा’&lt;/b&gt; बनाई, जिसका उद्देश्य शिक्षा और सामाजिक-आर्थिक सुधार था।">In <b>1920</b> he launched the weekly <b>‘Mooknayak’</b>. Shahu Maharaj of Kolhapur was deeply impressed. Practising at the Bombay High Court, he founded the <b>‘Bahishkrit Hitkarini Sabha’</b>, aimed at education and socio-economic uplift.</p>
+<p data-en="On &lt;b&gt;1 January 1927&lt;/b&gt; he held a ceremony at the Koregaon Victory Memorial (Jaystambh). In 1927 he led the &lt;b&gt;Mahad Satyagraha&lt;/b&gt; to win the untouchables’ right to draw water from the Chavdar Tank, and on &lt;b&gt;25 December 1927&lt;/b&gt; he burned copies of the Manusmriti with thousands of followers (the day is remembered as ‘Manusmriti Dahan Diwas’)." data-hi="&lt;b&gt;1 जनवरी 1927&lt;/b&gt; को उन्होंने कोरेगाँव विजय स्मारक (जयस्तंभ) पर समारोह आयोजित किया। 1927 में &lt;b&gt;महाड़ सत्याग्रह&lt;/b&gt; चलाकर अछूतों को चवदार जलाशय से पानी लेने का अधिकार दिलाने का संघर्ष किया, और &lt;b&gt;25 दिसंबर 1927&lt;/b&gt; को हज़ारों अनुयायियों के साथ मनुस्मृति की प्रतियाँ जलाईं (इसी दिन को ‘मनुस्मृति दहन दिवस’ कहा जाता है)।">On <b>1 January 1927</b> he held a ceremony at the Koregaon Victory Memorial (Jaystambh). In 1927 he led the <b>Mahad Satyagraha</b> to win the untouchables’ right to draw water from the Chavdar Tank, and on <b>25 December 1927</b> he burned copies of the Manusmriti with thousands of followers (the day is remembered as ‘Manusmriti Dahan Diwas’).</p>
+<p data-en="In &lt;b&gt;1930&lt;/b&gt;, after three months of preparation, he launched the &lt;b&gt;Kalaram Temple Satyagraha&lt;/b&gt; (Nashik), which drew about 15,000 volunteers. When the procession reached the temple gate, the doors were shut." data-hi="&lt;b&gt;1930&lt;/b&gt; में तीन महीने की तैयारी के बाद उन्होंने &lt;b&gt;कालाराम मंदिर सत्याग्रह&lt;/b&gt; (नाशिक) शुरू किया, जिसमें लगभग 15,000 स्वयंसेवक जुटे। जुलूस के मंदिर-द्वार तक पहुँचने पर द्वार बंद कर दिए गए।">In <b>1930</b>, after three months of preparation, he launched the <b>Kalaram Temple Satyagraha</b> (Nashik), which drew about 15,000 volunteers. When the procession reached the temple gate, the doors were shut.</p>
+</div>
+<div class="figs rv">
+<figure class="fig"><img alt="सभा" loading="lazy" src="images/i-010.jpg"/><figcaption data-en="Addressing a public meeting" data-hi="जनसभा को संबोधित करते हुए">Addressing a public meeting</figcaption></figure>
+<figure class="fig"><img alt="जयस्तंभ" loading="lazy" src="images/i-011.jpg"/><figcaption data-en="Jaystambh at Koregaon Bhima — Babasaheb and followers, 1 January 1927" data-hi="जयस्तंभ, कोरेगाँव भीमा में बाबासाहेब और अनुयायी — 1 जनवरी 1927">Jaystambh at Koregaon Bhima — Babasaheb and followers, 1 January 1927</figcaption></figure>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="गोलमेज और पूना पैक्ट" id="poona">
+<div class="wrap">
+<div class="sh rv"><div class="n">06</div><h2 data-en="The Round Table Conferences and the Poona Pact" data-hi="गोलमेज सम्मेलन और पूना पैक्ट">The Round Table Conferences and the Poona Pact</h2></div>
+<div class="two r">
+<div class="figs rv">
+<figure class="fig"><img alt="गोलमेज" loading="lazy" src="images/i-012.jpg"/><figcaption data-en="Second Round Table Conference, 1931" data-hi="दूसरा गोलमेज सम्मेलन, 1931">Second Round Table Conference, 1931</figcaption></figure>
+<figure class="fig"><img alt="यरवदा" loading="lazy" src="images/i-013.jpg"/><figcaption data-en="24 September 1932, Yerwada Central Jail — M.R. Jayakar, Tej Bahadur Sapru and Dr. Ambedkar" data-hi="24 सितम्बर 1932, यरवदा केंद्रीय कारागार में — एम.आर. जयकर, तेज बहादुर सप्रू और डॉ. आम्बेडकर">24 September 1932, Yerwada Central Jail — M.R. Jayakar, Tej Bahadur Sapru and Dr. Ambedkar</figcaption></figure>
+</div>
+<div class="txt rv">
+<p data-en="At the First Round Table Conference in London on 8 August 1930, Ambedkar laid out his political vision — that the safety of the oppressed lies in their being independent of both the government and the Congress. At the Second Round Table Conference in 1931 he had a sharp debate with Gandhi over separate electorates for the untouchables." data-hi="8 अगस्त 1930 को लंदन में प्रथम गोलमेज सम्मेलन में आंबेडकर ने अपनी राजनीतिक दृष्टि रखी — शोषित वर्ग की सुरक्षा उसके सरकार और कांग्रेस, दोनों से स्वतंत्र होने में है। 1931 के दूसरे गोलमेज सम्मेलन में अछूतों को पृथक निर्वाचिका देने के मुद्दे पर गाँधी से तीखी बहस हुई।">At the First Round Table Conference in London on 8 August 1930, Ambedkar laid out his political vision — that the safety of the oppressed lies in their being independent of both the government and the Congress. At the Second Round Table Conference in 1931 he had a sharp debate with Gandhi over separate electorates for the untouchables.</p>
+<p data-en="In 1932 the British government announced the &lt;b&gt;Communal Award&lt;/b&gt;, giving the Depressed Classes separate electorates and two votes. Gandhi began a fast unto death in Yerwada jail. Amid mounting pressure Ambedkar reached Yerwada on &lt;b&gt;24 September 1932&lt;/b&gt; and the &lt;b&gt;Poona Pact&lt;/b&gt; was signed." data-hi="1932 में ब्रिटिश सरकार ने &lt;b&gt;कम्युनल अवार्ड&lt;/b&gt; की घोषणा की, जिसमें दलित वर्ग को पृथक निर्वाचिका और दो वोटों का अधिकार मिला। गाँधी ने यरवदा जेल में मरण व्रत शुरू किया। बढ़ते दबाव के बीच &lt;b&gt;24 सितम्बर 1932&lt;/b&gt; को आंबेडकर यरवदा पहुँचे और &lt;b&gt;पूना पैक्ट&lt;/b&gt; हुआ।">In 1932 the British government announced the <b>Communal Award</b>, giving the Depressed Classes separate electorates and two votes. Gandhi began a fast unto death in Yerwada jail. Amid mounting pressure Ambedkar reached Yerwada on <b>24 September 1932</b> and the <b>Poona Pact</b> was signed.</p>
+<div class="grid" style="margin-top:14px">
+<div class="card"><h3>78 → 148</h3><p data-en="Reserved seats were raised from 78 to 148 in the Poona Pact." data-hi="पूना पैक्ट में आरक्षित सीटें 78 से बढ़ाकर 148 करवाई गईं।">Reserved seats were raised from 78 to 148 in the Poona Pact.</p></div>
+<div class="card"><h3 data-en="Education grants" data-hi="शिक्षा अनुदान">Education grants</h3><p data-en="A sufficient sum was fixed for the education of the untouchables in every province." data-hi="हर प्रांत में अछूतों की शिक्षा के लिए पर्याप्त राशि तय हुई।">A sufficient sum was fixed for the education of the untouchables in every province.</p></div>
+<div class="card"><h3 data-en="Government jobs" data-hi="सरकारी नौकरी">Government jobs</h3><p data-en="Recruitment of Depressed Class people without discrimination was assured." data-hi="बिना भेदभाव के दलित वर्ग की भर्ती सुनिश्चित की गई।">Recruitment of Depressed Class people without discrimination was assured.</p></div>
+</div>
+<p data-en="Ambedkar remained dissatisfied with the pact; in 1942 he denounced it, and also expressed his anger over it in his book ‘States and Minorities’." data-hi="आंबेडकर इस समझौते से असंतुष्ट रहे; 1942 में उन्होंने इसका धिक्कार किया और अपनी पुस्तक ‘स्टेट्स ऑफ़ माइनॉरिटीज़’ में भी नाराज़गी व्यक्त की।" style="margin-top:14px">Ambedkar remained dissatisfied with the pact; in 1942 he denounced it, and also expressed his anger over it in his book ‘States and Minorities’.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="राजनीतिक जीवन" id="politics">
+<div class="wrap">
+<div class="sh rv"><div class="n">07</div><h2 data-en="Political Life" data-hi="राजनीतिक जीवन">Political Life</h2></div>
+<div class="two">
+<div class="txt rv">
+<p data-en="Ambedkar’s political career began in &lt;b&gt;1926&lt;/b&gt;, when the Governor of Bombay nominated him to the Legislative Council (till 1936). On 13 October 1935 he became Principal of the Government Law College. In Mumbai he built the three-storey house &lt;b&gt;‘Rajgruha’&lt;/b&gt;, whose private library held over 50,000 books — then the largest private library in the world. His wife Ramabai died on 27 May 1935." data-hi="आंबेडकर का राजनीतिक करियर &lt;b&gt;1926&lt;/b&gt; में शुरू हुआ, जब बॉम्बे के गवर्नर ने उन्हें विधान परिषद का सदस्य नामित किया (1936 तक)। 13 अक्टूबर 1935 को वे सरकारी लॉ कॉलेज के प्रधानाचार्य बने। मुंबई में उन्होंने तीन मंज़िला घर &lt;b&gt;‘राजगृह’&lt;/b&gt; बनवाया, जिसके निजी पुस्तकालय में 50,000 से अधिक पुस्तकें थीं — तब दुनिया का सबसे बड़ा निजी पुस्तकालय। 27 मई 1935 को पत्नी रमाबाई का निधन हुआ।">Ambedkar’s political career began in <b>1926</b>, when the Governor of Bombay nominated him to the Legislative Council (till 1936). On 13 October 1935 he became Principal of the Government Law College. In Mumbai he built the three-storey house <b>‘Rajgruha’</b>, whose private library held over 50,000 books — then the largest private library in the world. His wife Ramabai died on 27 May 1935.</p>
+<div class="grid" style="margin:16px 0">
+<div class="card"><h3>1936</h3><p data-en="&lt;b&gt;Independent Labour Party&lt;/b&gt; founded; it won 13 seats in the 1937 elections. He served as Leader of the Opposition in the Bombay Assembly." data-hi="&lt;b&gt;स्वतंत्र लेबर पार्टी&lt;/b&gt; की स्थापना; 1937 के चुनावों में 13 सीटें जीतीं। बॉम्बे विधानसभा में विपक्ष के नेता रहे।"><b>Independent Labour Party</b> founded; it won 13 seats in the 1937 elections. He served as Leader of the Opposition in the Bombay Assembly.</p></div>
+<div class="card"><h3>1936</h3><p data-en="&lt;b&gt;‘Annihilation of Caste’&lt;/b&gt; published, 15 May." data-hi="&lt;b&gt;‘एनीहिलेशन ऑफ कास्ट’&lt;/b&gt; (जाति का विनाश) प्रकाशित, 15 मई।"><b>‘Annihilation of Caste’</b> published, 15 May.</p></div>
+<div class="card"><h3>1942</h3><p data-en="&lt;b&gt;All India Scheduled Castes Federation&lt;/b&gt; founded." data-hi="&lt;b&gt;ऑल इंडिया शेड्यूल्ड कास्ट्स फेडरेशन&lt;/b&gt; की स्थापना।"><b>All India Scheduled Castes Federation</b> founded.</p></div>
+<div class="card"><h3>1942–46</h3><p data-en="&lt;b&gt;Labour Member&lt;/b&gt; in the Viceroy’s Executive Council." data-hi="वायसराय की कार्यकारी परिषद में &lt;b&gt;श्रम मंत्री&lt;/b&gt;।"><b>Labour Member</b> in the Viceroy’s Executive Council.</p></div>
+<div class="card"><h3>1952</h3><p data-en="Lost the Lok Sabha election; nominated to the &lt;b&gt;Rajya Sabha&lt;/b&gt; in March 1952." data-hi="लोकसभा चुनाव में हार; मार्च 1952 में &lt;b&gt;राज्यसभा&lt;/b&gt; सदस्य नियुक्त।">Lost the Lok Sabha election; nominated to the <b>Rajya Sabha</b> in March 1952.</p></div>
+<div class="card"><h3>1956</h3><p data-en="Announced the founding of the Republican Party of India; it was formed after him, in 1957." data-hi="रिपब्लिकन पार्टी ऑफ़ इंडिया की स्थापना की घोषणा; गठन उनके बाद 1957 में।">Announced the founding of the Republican Party of India; it was formed after him, in 1957.</p></div>
+</div>
+<p data-en="After 1940 he wrote books such as &lt;b&gt;‘Thoughts on Pakistan’&lt;/b&gt; and &lt;b&gt;‘What Congress and Gandhi Have Done to the Untouchables?’&lt;/b&gt;, and in ‘Who Were the Shudras?’ explained the origin of the Shudras." data-hi="1940 के बाद उन्होंने &lt;b&gt;‘थॉट्स ऑन पाकिस्तान’&lt;/b&gt; और &lt;b&gt;‘व्हॉट कांग्रेस एंड गाँधी हैव डन टू द अनटचेबल्स?’&lt;/b&gt; जैसी पुस्तकें लिखीं, और ‘हू वेयर द शूद्राज़?’ में शूद्रों की उत्पत्ति की व्याख्या की।">After 1940 he wrote books such as <b>‘Thoughts on Pakistan’</b> and <b>‘What Congress and Gandhi Have Done to the Untouchables?’</b>, and in ‘Who Were the Shudras?’ explained the origin of the Shudras.</p>
+</div>
+<div class="figs rv">
+<figure class="fig"><img alt="भाषण" loading="lazy" src="images/i-014.jpg"/><figcaption data-en="Ambedkar addressing a gathering" data-hi="भाषण करते हुए आंबेडकर">Ambedkar addressing a gathering</figcaption></figure>
+<figure class="fig"><img alt="परिवार" loading="lazy" src="images/i-025.jpg"/><figcaption data-en="February 1934, with family at ‘Rajgruha’ — Yashwant, Dr. Ambedkar, Ramabai, Lakshmibai, Mukund and his favourite dog Toby" data-hi="फरवरी 1934, ‘राजगृह’ में परिवार के साथ — यशवंत, डॉ. आम्बेडकर, रमाबाई, लक्ष्मीबाई, मुकुंद और उनका प्रिय कुत्ता टोबी">February 1934, with family at ‘Rajgruha’ — Yashwant, Dr. Ambedkar, Ramabai, Lakshmibai, Mukund and his favourite dog Toby</figcaption></figure>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="संविधान निर्माण" id="constitution">
+<div class="wrap">
+<div class="sh rv"><div class="n">08</div><h2 data-en="Making the Constitution" data-hi="संविधान निर्माण">Making the Constitution</h2></div>
+<div class="two r">
+<div class="figs rv">
+<figure class="fig"><img alt="संविधान प्रस्तुति" loading="lazy" src="images/i-016.jpg"/><figcaption data-en="Dr. Ambedkar, Chairman of the Drafting Committee, presenting the final draft of the Constitution to Rajendra Prasad on 25 November 1949" data-hi="ड्राफ्टिंग कमेटी के अध्यक्ष डॉ. आम्बेडकर संविधान का अंतिम मसौदा 25 नवंबर 1949 को राजेन्द्र प्रसाद को प्रस्तुत करते हुए">Dr. Ambedkar, Chairman of the Drafting Committee, presenting the final draft of the Constitution to Rajendra Prasad on 25 November 1949</figcaption></figure>
+<figure class="fig"><img alt="1950" loading="lazy" src="images/i-017.jpg"/><figcaption data-en="Ambedkar in 1950" data-hi="1950 में आम्बेडकर">Ambedkar in 1950</figcaption></figure>
+</div>
+<div class="txt rv">
+<p data-en="After independence on 15 August 1947, Ambedkar was invited to become the country’s &lt;b&gt;first Law and Justice Minister&lt;/b&gt;. On &lt;b&gt;29 August 1947&lt;/b&gt; he was appointed &lt;b&gt;Chairman of the Drafting Committee&lt;/b&gt;. He studied the constitutions of about &lt;b&gt;60 countries&lt;/b&gt; and is regarded as the “Father of the Indian Constitution”." data-hi="15 अगस्त 1947 को स्वतंत्रता के बाद आंबेडकर को देश का &lt;b&gt;पहला कानून एवं न्याय मंत्री&lt;/b&gt; बनने का निमंत्रण मिला। &lt;b&gt;29 अगस्त 1947&lt;/b&gt; को वे संविधान की &lt;b&gt;मसौदा समिति के अध्यक्ष&lt;/b&gt; नियुक्त हुए। उन्होंने लगभग &lt;b&gt;60 देशों के संविधानों&lt;/b&gt; का अध्ययन किया और उन्हें “भारत के संविधान का पिता” माना जाता है।">After independence on 15 August 1947, Ambedkar was invited to become the country’s <b>first Law and Justice Minister</b>. On <b>29 August 1947</b> he was appointed <b>Chairman of the Drafting Committee</b>. He studied the constitutions of about <b>60 countries</b> and is regarded as the “Father of the Indian Constitution”.</p>
+<div class="q" data-en="“Mr. President… the burden of drafting this Constitution fell on Dr. Ambedkar, and I have no doubt that we are grateful to him.”&lt;small&gt;— T.T. Krishnamachari, in the Constituent Assembly&lt;/small&gt;" data-hi="“अध्यक्ष महोदय… इस संविधान का मसौदा तैयार करने का सारा भार डॉ. आम्बेडकर पर पड़ा और मुझे कोई संदेह नहीं है कि हम उनके लिए आभारी हैं।”&lt;small&gt;— टी.टी. कृष्णामाचारी, संविधान सभा में&lt;/small&gt;">“Mr. President… the burden of drafting this Constitution fell on Dr. Ambedkar, and I have no doubt that we are grateful to him.”<small>— T.T. Krishnamachari, in the Constituent Assembly</small></div>
+<p data-en="The Constituent Assembly adopted the Constitution on &lt;b&gt;26 November 1949&lt;/b&gt;. It guarantees freedom of religion, abolishes untouchability and bars all forms of discrimination; the reservation of jobs and education for Scheduled Castes, Scheduled Tribes and other backward classes is linked to his advocacy. Granville Austin called it “first and foremost a social document”." data-hi="संविधान सभा ने &lt;b&gt;26 नवंबर 1949&lt;/b&gt; को संविधान अपनाया। उसमें धर्म की आज़ादी, छुआछूत का अंत और भेदभाव के सभी रूपों पर रोक की गारंटी है; अनुसूचित जाति, जनजाति और अन्य पिछड़ा वर्ग के लिए नौकरियों व शिक्षा में आरक्षण की व्यवस्था उनके समर्थन से जुड़ी। ग्रैनविले ऑस्टिन ने इसे “पहला और सबसे महत्वपूर्ण सामाजिक दस्तावेज़” कहा।">The Constituent Assembly adopted the Constitution on <b>26 November 1949</b>. It guarantees freedom of religion, abolishes untouchability and bars all forms of discrimination; the reservation of jobs and education for Scheduled Castes, Scheduled Tribes and other backward classes is linked to his advocacy. Granville Austin called it “first and foremost a social document”.</p>
+<div class="q" data-en="“If anything goes wrong, it will not be because our Constitution is bad, but because the man who uses it is vile.”&lt;small&gt;— Dr. Ambedkar&lt;/small&gt;" data-hi="“अगर कभी कुछ गलत हुआ तो इसका कारण यह नहीं होगा कि हमारा संविधान खराब था, बल्कि इसका उपयोग करने वाला मनुष्य अधम था।”&lt;small&gt;— डॉ. आंबेडकर&lt;/small&gt;">“If anything goes wrong, it will not be because our Constitution is bad, but because the man who uses it is vile.”<small>— Dr. Ambedkar</small></div>
+<p data-en="Other matters: he opposed &lt;b&gt;Article 370&lt;/b&gt; and recommended a &lt;b&gt;Uniform Civil Code&lt;/b&gt;. When the &lt;b&gt;Hindu Code Bill&lt;/b&gt; (giving women rights in inheritance, marriage and more) was held up in Parliament in 1951, he resigned from the Cabinet." data-hi="अन्य विषय: उन्होंने &lt;b&gt;अनुच्छेद 370&lt;/b&gt; का विरोध किया और &lt;b&gt;समान नागरिक संहिता&lt;/b&gt; की सिफारिश की। &lt;b&gt;हिंदू कोड बिल&lt;/b&gt; (महिलाओं को उत्तराधिकार, विवाह आदि में अधिकार) 1951 में संसद में रोके जाने पर उन्होंने मंत्रिमंडल से इस्तीफ़ा दे दिया।">Other matters: he opposed <b>Article 370</b> and recommended a <b>Uniform Civil Code</b>. When the <b>Hindu Code Bill</b> (giving women rights in inheritance, marriage and more) was held up in Parliament in 1951, he resigned from the Cabinet.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="धर्म परिवर्तन और बौद्ध धम्म" id="dhamma">
+<div class="wrap">
+<div class="sh rv"><div class="n">09</div><h2 data-en="Conversion and the Buddhist Dhamma" data-hi="धर्म परिवर्तन और बौद्ध धम्म">Conversion and the Buddhist Dhamma</h2></div>
+<div class="two">
+<div class="txt rv">
+<p data-en="On &lt;b&gt;13 October 1935&lt;/b&gt;, at Yeola near Nashik, Ambedkar declared:" data-hi="&lt;b&gt;13 अक्टूबर 1935&lt;/b&gt; को नासिक के निकट येवला में आंबेडकर ने घोषणा की:">On <b>13 October 1935</b>, at Yeola near Nashik, Ambedkar declared:</p>
+<div class="q" data-en="“Though I was born an untouchable Hindu, I will not die a Hindu!”" data-hi="“हालांकि मैं एक अछूत हिन्दू के रूप में पैदा हुआ हूँ, लेकिन मैं एक हिन्दू के रूप में हरगिज़ नहीं मरूँगा!”">“Though I was born an untouchable Hindu, I will not die a Hindu!”</div>
+<p data-en="He then spent 21 years studying all the major religions. He chose Buddhism because it unites &lt;b&gt;prajna&lt;/b&gt; (reason), &lt;b&gt;karuna&lt;/b&gt; (compassion) and &lt;b&gt;samata&lt;/b&gt; (equality). He turned down inducements worth crores of rupees from the Nizam of Hyderabad and several missionaries." data-hi="इसके बाद 21 वर्ष तक उन्होंने सभी प्रमुख धर्मों का गहन अध्ययन किया। उन्होंने बौद्ध धर्म इसलिए चुना क्योंकि उसमें &lt;b&gt;प्रज्ञा&lt;/b&gt; (बुद्धि), &lt;b&gt;करुणा&lt;/b&gt; (प्रेम) और &lt;b&gt;समता&lt;/b&gt; (समानता) — तीनों का समन्वय है। हैदराबाद के निज़ाम और कई मिशनरियों के करोड़ों रुपये के प्रलोभन उन्होंने ठुकरा दिए।">He then spent 21 years studying all the major religions. He chose Buddhism because it unites <b>prajna</b> (reason), <b>karuna</b> (compassion) and <b>samata</b> (equality). He turned down inducements worth crores of rupees from the Nizam of Hyderabad and several missionaries.</p>
+<p data-en="In 1955 he founded the ‘Bharatiya Bauddha Mahasabha’ and in 1956 completed ‘The Buddha and His Dhamma’ (published 1957). On &lt;b&gt;14 October 1956&lt;/b&gt; at Nagpur he embraced Buddhism, taking the Triple Refuge and Five Precepts from Mahasthavir Chandramani, and gave about five lakh followers diksha into Navayana Buddhism with the &lt;b&gt;22 vows&lt;/b&gt;. On 15 October another 2–3 lakh and on 16 October at Chandrapur about 3 lakh followed — over 11 lakh people in three days. The ground at Nagpur became known as &lt;b&gt;Deekshabhoomi&lt;/b&gt;." data-hi="1955 में उन्होंने ‘भारतीय बौद्ध महासभा’ बनाई और 1956 में ‘द बुद्ध एंड हिज़ धम्म’ पूरी की (प्रकाशन 1957)। &lt;b&gt;14 अक्टूबर 1956&lt;/b&gt; को नागपुर में महास्थवीर चंद्रमणि से त्रिरत्न और पंचशील ग्रहण कर उन्होंने बौद्ध धर्म अपनाया और &lt;b&gt;22 प्रतिज्ञाएँ&lt;/b&gt; देते हुए लगभग पाँच लाख अनुयायियों को नवयान बौद्ध धर्म की दीक्षा दी। 15 अक्टूबर को 2–3 लाख और 16 अक्टूबर को चंद्रपुर में लगभग 3 लाख को दीक्षा दी — तीन दिन में 11 लाख से अधिक लोग। नागपुर की यह भूमि &lt;b&gt;दीक्षाभूमि&lt;/b&gt; कहलाई।">In 1955 he founded the ‘Bharatiya Bauddha Mahasabha’ and in 1956 completed ‘The Buddha and His Dhamma’ (published 1957). On <b>14 October 1956</b> at Nagpur he embraced Buddhism, taking the Triple Refuge and Five Precepts from Mahasthavir Chandramani, and gave about five lakh followers diksha into Navayana Buddhism with the <b>22 vows</b>. On 15 October another 2–3 lakh and on 16 October at Chandrapur about 3 lakh followed — over 11 lakh people in three days. The ground at Nagpur became known as <b>Deekshabhoomi</b>.</p>
+<div class="q" data-en="“I consider the Dhamma of the Buddha the best. No religion can be compared with it.”" data-hi="“मैं बुद्ध के धम्म को सबसे अच्छा मानता हूँ। इससे किसी धर्म की तुलना नहीं की जा सकती।”">“I consider the Dhamma of the Buddha the best. No religion can be compared with it.”</div>
+</div>
+<div class="figs rv">
+<figure class="fig"><img alt="येवला" loading="lazy" src="images/i-015.jpg"/><figcaption data-en="13 October 1935, announcing his conversion at Yeola" data-hi="13 अक्टूबर 1935, येवला में धर्म परिवर्तन की घोषणा करते हुए">13 October 1935, announcing his conversion at Yeola</figcaption></figure>
+<figure class="fig"><img alt="नागपुर" loading="lazy" src="images/i-019.jpg"/><figcaption data-en="At the Dhamma diksha ceremony in Nagpur, 14 October 1956" data-hi="नागपुर के धम्म दीक्षा समारोह में, 14 अक्टूबर 1956">At the Dhamma diksha ceremony in Nagpur, 14 October 1956</figcaption></figure>
+<figure class="fig"><img alt="दीक्षा" loading="lazy" src="images/i-020.jpg"/><figcaption data-en="Taking diksha from Bhante Chandramani" data-hi="भन्ते चंद्रमणि से दीक्षा ग्रहण करते हुए">Taking diksha from Bhante Chandramani</figcaption></figure>
+<figure class="fig"><img alt="दीक्षाभूमि" loading="lazy" src="images/i-021.jpg"/><figcaption data-en="Deekshabhoomi stupa, Nagpur" data-hi="दीक्षाभूमि स्तूप, नागपुर">Deekshabhoomi stupa, Nagpur</figcaption></figure>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="अर्थशास्त्र में योगदान" id="economics">
+<div class="wrap">
+<div class="sh rv"><div class="n">10</div><h2 data-en="Contribution to Economics" data-hi="अर्थशास्त्र में योगदान">Contribution to Economics</h2></div>
+<div class="txt rv" style="max-width:820px">
+<p data-en="Ambedkar was among the first Indians to earn a doctorate in economics abroad. He stressed industrialisation and agricultural development, and treated education, sanitation, community health and housing as basic amenities." data-hi="आंबेडकर विदेश से अर्थशास्त्र में डॉक्टरेट लेने वाले पहले भारतीयों में थे। उन्होंने औद्योगीकरण और कृषि विकास पर बल दिया तथा शिक्षा, स्वच्छता, सामुदायिक स्वास्थ्य और आवास को बुनियादी सुविधाएँ माना।">Ambedkar was among the first Indians to earn a doctorate in economics abroad. He stressed industrialisation and agricultural development, and treated education, sanitation, community health and housing as basic amenities.</p>
+</div>
+<div class="grid rv" style="margin-top:16px">
+<div class="card"><h3 data-en="Reserve Bank of India" data-hi="भारतीय रिज़र्व बैंक">Reserve Bank of India</h3><p data-en="The RBI was founded on his ideas, which he submitted to the Hilton Young Commission." data-hi="RBI की स्थापना उनके उन विचारों पर आधारित थी जो उन्होंने हिल्टन यंग कमीशन को दिए।">The RBI was founded on his ideas, which he submitted to the Hilton Young Commission.</p></div>
+<div class="card"><h3 data-en="Three theses" data-hi="तीन शोध-ग्रंथ">Three theses</h3><p data-en="Administration and Finance of the East India Company · Provincial Finance in British India · The Problem of the Rupee." data-hi="ईस्ट इंडिया कंपनी का प्रशासन व वित्त · ब्रिटिश भारत में प्रांतीय वित्त · रुपये की समस्या।">Administration and Finance of the East India Company · Provincial Finance in British India · The Problem of the Rupee.</p></div>
+<div class="card"><h3 data-en="Amartya Sen" data-hi="अमर्त्य सेन">Amartya Sen</h3><p data-en="“Ambedkar is my father in economics.”" data-hi="“आम्बेडकर अर्थशास्त्र विषय में मेरे पिता हैं।”">“Ambedkar is my father in economics.”</p></div>
+<div class="card"><h3 data-en="Narendra Jadhav" data-hi="नरेन्द्र जाधव">Narendra Jadhav</h3><p data-en="“Ambedkar was the most highly educated Indian economist of all time.”" data-hi="“आम्बेडकर सभी समय के उच्चतम शिक्षित भारतीय अर्थशास्त्री थे।”">“Ambedkar was the most highly educated Indian economist of all time.”</p></div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="समयरेखा" id="timeline">
+<div class="wrap">
+<div class="sh rv"><div class="n">11</div><h2 data-en="Timeline of His Life" data-hi="जीवन की समयरेखा">Timeline of His Life</h2></div>
+<div class="fl" id="tfl"></div>
+<div class="tl" id="tl"></div>
+</div>
+</section>
+<section class="sec" data-t="निजी जीवन" id="personal">
+<div class="wrap">
+<div class="sh rv"><div class="n">12</div><h2 data-en="Personal Life" data-hi="निजी जीवन">Personal Life</h2></div>
+<div class="two r">
+<div class="figs rv">
+<figure class="fig"><img alt="सविता" loading="lazy" src="images/i-018.jpg"/><figcaption data-en="With his wife Savita Ambedkar, 1948" data-hi="1948 में पत्नी सविता आम्बेडकर के साथ">With his wife Savita Ambedkar, 1948</figcaption></figure>
+</div>
+<div class="txt rv">
+<p data-en="His grandfather was Maloji Sakpal, father Ramji Sakpal and mother Bhimabai. Ramabai and Bhimrao had five children — four sons (Yashwant, Ramesh, Gangadhar, Rajratna) and a daughter (Indu); all but Yashwant died in childhood. Ramabai died in 1935." data-hi="दादा का नाम मालोजी सकपाल, पिता रामजी सकपाल और माता भीमाबाई। रमाबाई और भीमराव को पाँच संतानें हुईं — चार पुत्र (यशवंत, रमेश, गंगाधर, राजरत्न) और एक पुत्री (इंदु); यशवंत को छोड़कर सभी का बचपन में ही निधन हो गया। 1935 में रमाबाई का निधन हुआ।">His grandfather was Maloji Sakpal, father Ramji Sakpal and mother Bhimabai. Ramabai and Bhimrao had five children — four sons (Yashwant, Ramesh, Gangadhar, Rajratna) and a daughter (Indu); all but Yashwant died in childhood. Ramabai died in 1935.</p>
+<p data-en="On &lt;b&gt;15 April 1948&lt;/b&gt; he married Dr. Sharada Kabir in New Delhi; she took the name Savita Ambedkar. Known as ‘Mai’ or ‘Maisaheb’, she died on 29 May 2003. His grandson Prakash Ambedkar is active in politics." data-hi="&lt;b&gt;15 अप्रैल 1948&lt;/b&gt; को उन्होंने नई दिल्ली में डॉ. शारदा कबीर से विवाह किया, जिन्होंने सविता आम्बेडकर नाम अपनाया। उन्हें ‘माई’ या ‘माइसाहेब’ कहा जाता था; 29 मई 2003 को उनका निधन हुआ। पौत्र प्रकाश आम्बेडकर राजनीति में सक्रिय हैं।">On <b>15 April 1948</b> he married Dr. Sharada Kabir in New Delhi; she took the name Savita Ambedkar. Known as ‘Mai’ or ‘Maisaheb’, she died on 29 May 2003. His grandson Prakash Ambedkar is active in politics.</p>
+<h3 data-en="Three Gurus and Three Deities" data-hi="तीन गुरु और तीन उपास्य" style="font-family:var(--head);color:var(--gold2);margin:18px 0 8px">Three Gurus and Three Deities</h3>
+<div class="grid">
+<div class="card"><h3 data-en="Three gurus" data-hi="तीन गुरु">Three gurus</h3><p data-en="Gautama Buddha · Sant Kabir · Mahatma Jyotirao Phule" data-hi="तथागत गौतम बुद्ध · संत कबीर · महात्मा ज्योतिराव फुले">Gautama Buddha · Sant Kabir · Mahatma Jyotirao Phule</p></div>
+<div class="card"><h3 data-en="Three deities" data-hi="तीन उपास्य">Three deities</h3><p data-en="Knowledge · Self-respect · Character" data-hi="ज्ञान · स्वाभिमान · शील">Knowledge · Self-respect · Character</p></div>
+<div class="card"><h3 data-en="Languages" data-hi="भाषाएँ">Languages</h3><p data-en="Knew 11 languages — Marathi (mother tongue), English, Hindi, Pali, Sanskrit, Gujarati, German, Persian, French, Kannada, Bengali." data-hi="11 भाषाओं का ज्ञान — मराठी (मातृभाषा), अंग्रेज़ी, हिन्दी, पालि, संस्कृत, गुजराती, जर्मन, फ़ारसी, फ्रेंच, कन्नड, बंगाली।">Knew 11 languages — Marathi (mother tongue), English, Hindi, Pali, Sanskrit, Gujarati, German, Persian, French, Kannada, Bengali.</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="पुस्तकें" id="books">
+<div class="wrap">
+<div class="sh rv"><div class="n">13</div><h2 data-en="Books and Writings" data-hi="पुस्तकें और रचनाएँ">Books and Writings</h2></div>
+<div class="two">
+<div class="txt rv">
+<p data-en="Ambedkar was a gifted and combative writer. His English works include &lt;b&gt;32 books and monographs&lt;/b&gt; (22 complete, 10 incomplete), 10 memoranda, evidences and statements, 10 research papers and 10 forewords. ‘The Buddha and His Dhamma’ is regarded as the scripture of Indian Buddhists, and his D.Sc. thesis is linked to the founding of the Reserve Bank of India. The Maharashtra government has published 22 volumes (till 2019) of ‘Dr. Babasaheb Ambedkar: Writings and Speeches’ in English." data-hi="आंबेडकर प्रतिभाशाली और जुझारू लेखक थे। उनकी अंग्रेज़ी रचनाओं में &lt;b&gt;32 किताबें व मोनोग्राफ&lt;/b&gt; (22 पूर्ण, 10 अधूरी), 10 ज्ञापन-साक्ष्य-वक्तव्य, 10 शोध-दस्तावेज़ और 10 प्रस्तावनाएँ शामिल हैं। ‘भगवान बुद्ध और उनका धम्म’ को भारतीय बौद्धों का धर्मग्रंथ माना जाता है, और उनकी डी.एससी. थीसिस से भारतीय रिज़र्व बैंक की नींव जुड़ी है। महाराष्ट्र सरकार द्वारा ‘डॉ. बाबासाहेब आम्बेडकर: राइटिंग्स एंड स्पीचेज़’ के 22 खंड (2019 तक) अंग्रेज़ी में प्रकाशित हुए।">Ambedkar was a gifted and combative writer. His English works include <b>32 books and monographs</b> (22 complete, 10 incomplete), 10 memoranda, evidences and statements, 10 research papers and 10 forewords. ‘The Buddha and His Dhamma’ is regarded as the scripture of Indian Buddhists, and his D.Sc. thesis is linked to the founding of the Reserve Bank of India. The Maharashtra government has published 22 volumes (till 2019) of ‘Dr. Babasaheb Ambedkar: Writings and Speeches’ in English.</p>
+<input class="srch" id="bsearch" placeholder="🔎 पुस्तक खोजें (जैसे: Caste, Buddha, Pakistan)"/>
+<div class="bl" id="blist"></div>
+</div>
+<div class="figs rv">
+<figure class="fig"><img alt="एनिहिलेशन ऑफ कास्ट" loading="lazy" src="images/i-026.jpg"/><figcaption data-en="Cover of the first edition of ‘Annihilation of Caste’, 1936" data-hi="‘एनिहिलेशन ऑफ़ कास्ट’ के पहले संस्करण का कवर, 1936">Cover of the first edition of ‘Annihilation of Caste’, 1936</figcaption></figure>
+<figure class="fig"><img alt="जर्मन पत्र" loading="lazy" src="images/i-027.jpg"/><figcaption data-en="Letter written in fluent German to the University of Bonn, 25 February 1921" data-hi="25 फरवरी 1921 को धाराप्रवाह जर्मन में बॉन विश्वविद्यालय को लिखा पत्र">Letter written in fluent German to the University of Bonn, 25 February 1921</figcaption></figure>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="पत्रकारिता" id="press">
+<div class="wrap">
+<div class="sh rv"><div class="n">14</div><h2 data-en="Journalism" data-hi="पत्रकारिता">Journalism</h2></div>
+<div class="two r">
+<div class="figs rv">
+<figure class="fig"><img alt="अखबार" loading="lazy" src="images/i-028.jpg"/><figcaption data-en="Newspapers and journals edited by Ambedkar" data-hi="आम्बेडकर द्वारा सम्पादित पत्र-पत्रिकाएँ">Newspapers and journals edited by Ambedkar</figcaption></figure>
+<figure class="fig"><img alt="मूकनायक" loading="lazy" src="images/i-030.jpg"/><figcaption data-en="Mooknayak" data-hi="मूकनायक">Mooknayak</figcaption></figure>
+<figure class="fig"><img alt="बहिष्कृत भारत" loading="lazy" src="images/i-031.jpg"/><figcaption data-en="An issue of Bahishkrit Bharat" data-hi="बहिष्कृत भारत का अंक">An issue of Bahishkrit Bharat</figcaption></figure>
+</div>
+<div class="txt rv">
+<div class="q" data-en="“A movement needs a newspaper to succeed; a movement without one is like a bird with broken wings.”" data-hi="“किसी भी आन्दोलन को सफल बनाने के लिए अखबार की आवश्यकता होती है; अगर आन्दोलन का कोई अखबार नहीं है तो उसकी हालत पंख टूटे पंछी जैसी होती है।”">“A movement needs a newspaper to succeed; a movement without one is like a bird with broken wings.”</div>
+<p data-en="All the papers were published in Marathi, because it was Maharashtra’s language of the people and the oppressed masses understood only that." data-hi="सभी पत्र मराठी में निकले, क्योंकि वही महाराष्ट्र की जन-भाषा थी और शोषित जनता केवल उसे समझती थी।">All the papers were published in Marathi, because it was Maharashtra’s language of the people and the oppressed masses understood only that.</p>
+<div class="grid">
+<div class="card"><h3 data-en="Mooknayak · 1920" data-hi="मूकनायक · 1920">Mooknayak · 1920</h3><p data-en="First fortnightly on 31 January 1920; Shahu Maharaj gave ₹25,000. Closed in 1923 for financial reasons." data-hi="31 जनवरी 1920 को पहला पाक्षिक; शाहू महाराज ने 25,000 रुपये की मदद दी। 1923 में आर्थिक कारणों से बंद।">First fortnightly on 31 January 1920; Shahu Maharaj gave ₹25,000. Closed in 1923 for financial reasons.</p></div>
+<div class="card"><h3 data-en="Bahishkrit Bharat · 1924" data-hi="बहिष्कृत भारत · 1924">Bahishkrit Bharat · 1924</h3><p data-en="3 April 1924; 34 issues in all, closed in November 1929." data-hi="3 अप्रैल 1924; कुल 34 अंक, नवंबर 1929 में बंद।">3 April 1924; 34 issues in all, closed in November 1929.</p></div>
+<div class="card"><h3 data-en="Samata · 1928" data-hi="समता · 1928">Samata · 1928</h3><p data-en="29 June 1928; mouthpiece of the Samaj Samata Sangh." data-hi="29 जून 1928; समाज समता संघ का मुखपत्र।">29 June 1928; mouthpiece of the Samaj Samata Sangh.</p></div>
+<div class="card"><h3 data-en="Janata · 1930" data-hi="जनता · 1930">Janata · 1930</h3><p data-en="Ran from 24 February 1930 for about 26 years; the 1944 article “Aamhi Shasankarti Jamaat Banaar”." data-hi="24 फरवरी 1930 से लगभग 26 वर्ष चला; 1944 का लेख “आम्ही शासनकर्ती जमात बनणार”।">Ran from 24 February 1930 for about 26 years; the 1944 article “Aamhi Shasankarti Jamaat Banaar”.</p></div>
+<div class="card"><h3 data-en="Prabuddha Bharat · 1956" data-hi="प्रबुद्ध भारत · 1956">Prabuddha Bharat · 1956</h3><p data-en="4 February 1956; revived by Prakash Ambedkar in 2017." data-hi="4 फरवरी 1956; 2017 में प्रकाश आम्बेडकर ने पुनः शुरू किया।">4 February 1956; revived by Prakash Ambedkar in 2017.</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="महापरिनिर्वाण" id="death">
+<div class="wrap">
+<div class="sh rv"><div class="n">15</div><h2 data-en="Mahaparinirvan" data-hi="महापरिनिर्वाण">Mahaparinirvan</h2></div>
+<div class="two">
+<div class="txt rv">
+<p data-en="He had diabetes from 1948 and was gravely ill in 1954. Three days after finishing his last manuscript, ‘The Buddha and Karl Marx’ (2 December 1956), he attained &lt;b&gt;Mahaparinirvan on 6 December 1956&lt;/b&gt; in his sleep in Delhi. A special aircraft brought his body to ‘Rajgruha’ in Mumbai, and on 7 December a Buddhist-style cremation was held at Dadar Chowpatty with lakhs attending. The place is now &lt;b&gt;Chaityabhoomi&lt;/b&gt;. At the cremation, over a million followers took Buddhist diksha." data-hi="1948 से वे मधुमेह से पीड़ित थे; 1954 में वे बहुत बीमार रहे। अपनी अंतिम पांडुलिपि ‘बुद्ध और कार्ल मार्क्स’ (2 दिसंबर 1956) पूरी करने के बाद &lt;b&gt;6 दिसंबर 1956&lt;/b&gt; को दिल्ली में नींद में उनका महापरिनिर्वाण हुआ। विशेष विमान से पार्थिव शरीर मुंबई के ‘राजगृह’ लाया गया और 7 दिसंबर को दादर चौपाटी पर बौद्ध रीति से अंतिम संस्कार हुआ, जिसमें लाखों लोग शामिल हुए। यह स्थान अब &lt;b&gt;चैत्यभूमि&lt;/b&gt; है। अंतिम संस्कार के समय 10 लाख से अधिक अनुयायियों ने बौद्ध धर्म की दीक्षा ली।">He had diabetes from 1948 and was gravely ill in 1954. Three days after finishing his last manuscript, ‘The Buddha and Karl Marx’ (2 December 1956), he attained <b>Mahaparinirvan on 6 December 1956</b> in his sleep in Delhi. A special aircraft brought his body to ‘Rajgruha’ in Mumbai, and on 7 December a Buddhist-style cremation was held at Dadar Chowpatty with lakhs attending. The place is now <b>Chaityabhoomi</b>. At the cremation, over a million followers took Buddhist diksha.</p>
+<p data-en="Every year more than 2 million people gather on 14 April, 6 December and 14 October at &lt;b&gt;Chaityabhoomi (Mumbai), Deekshabhoomi (Nagpur)&lt;/b&gt; and &lt;b&gt;Bhim Janmabhoomi (Mhow)&lt;/b&gt; to pay tribute." data-hi="हर वर्ष 20 लाख से अधिक लोग 14 अप्रैल, 6 दिसंबर और 14 अक्टूबर को &lt;b&gt;चैत्यभूमि (मुंबई), दीक्षाभूमि (नागपुर)&lt;/b&gt; और &lt;b&gt;भीम जन्मभूमि (महू)&lt;/b&gt; में श्रद्धांजलि अर्पित करने जुटते हैं।">Every year more than 2 million people gather on 14 April, 6 December and 14 October at <b>Chaityabhoomi (Mumbai), Deekshabhoomi (Nagpur)</b> and <b>Bhim Janmabhoomi (Mhow)</b> to pay tribute.</p>
+</div>
+<div class="figs rv">
+<figure class="fig"><img alt="महापरिनिर्वाण" loading="lazy" src="images/i-022.jpg"/><figcaption data-en="Babasaheb’s Mahaparinirvan" data-hi="बाबासाहेब का महापरिनिर्वाण">Babasaheb’s Mahaparinirvan</figcaption></figure>
+<figure class="fig"><img alt="अंत्ययात्रा" loading="lazy" src="images/i-023.jpg"/><figcaption data-en="The funeral procession — left Dadar and reached the Chowpatty at 6 pm" data-hi="अंत्ययात्रा — दादर से शाम 6 बजे चौपाटी पहुँची">The funeral procession — left Dadar and reached the Chowpatty at 6 pm</figcaption></figure>
+<figure class="fig"><img alt="चैत्यभूमि" loading="lazy" src="images/i-024.jpg"/><figcaption data-en="Chaityabhoomi, Babasaheb’s memorial site" data-hi="चैत्यभूमि, बाबासाहेब की समाधि स्थली">Chaityabhoomi, Babasaheb’s memorial site</figcaption></figure>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" data-t="प्रभाव और विरासत" id="legacy">
+<div class="wrap">
+<div class="sh rv"><div class="n">16</div><h2 data-en="Influence and Legacy" data-hi="प्रभाव और विरासत">Influence and Legacy</h2></div>
+<div class="txt rv" style="max-width:860px">
+<p data-en="In independent India his socio-political ideas are respected across the political spectrum. Since 1927 followers have called him ‘&lt;b&gt;Babasaheb&lt;/b&gt;’ (“respected father”), and the name ‘Bhim’ lives on in Jai Bhim, the Bhim flag, Bhim Janmabhoomi and more." data-hi="स्वतंत्र भारत में उनके सामाजिक-राजनीतिक विचारों को पूरे राजनीतिक स्पेक्ट्रम में सम्मान मिलता है। 1927 से अनुयायी उन्हें ‘&lt;b&gt;बाबासाहेब&lt;/b&gt;’ (पिता-साहब) कहते हैं, और ‘भीम’ नाम जय भीम, भीम ध्वज, भीम जन्मभूमि आदि में जीवित है।">In independent India his socio-political ideas are respected across the political spectrum. Since 1927 followers have called him ‘<b>Babasaheb</b>’ (“respected father”), and the name ‘Bhim’ lives on in Jai Bhim, the Bhim flag, Bhim Janmabhoomi and more.</p>
+</div>
+<div class="grid rv" style="margin-top:14px">
+<div class="card"><h3 data-en="Columbian Ahead of Their Time" data-hi="कोलंबियन अहेड ऑफ देअर टाइम">Columbian Ahead of Their Time</h3><p data-en="In 2004 first name on Columbia University’s list of 100 outstanding alumni; “the Maker of Modern India”." data-hi="2004 में कोलंबिया विश्वविद्यालय की 100 मेधावी पूर्व-छात्रों की सूची में पहला नाम; “आधुनिक भारत का निर्माता”।">In 2004 first name on Columbia University’s list of 100 outstanding alumni; “the Maker of Modern India”.</p></div>
+<div class="card"><h3 data-en="The Greatest Indian · 2012" data-hi="द ग्रेटेस्ट इंडियन · 2012">The Greatest Indian · 2012</h3><p data-en="Most votes in a History TV18 and CNN-IBN poll (about 20 million votes cast)." data-hi="हिस्ट्री टीवी18 व सीएनएन-आईबीएन के सर्वेक्षण में सर्वाधिक वोट (लगभग 2 करोड़ में)।">Most votes in a History TV18 and CNN-IBN poll (about 20 million votes cast).</p></div>
+<div class="card"><h3 data-en="Bharat Ratna · 1990" data-hi="भारत रत्न · 1990">Bharat Ratna · 1990</h3><p data-en="The country’s highest civilian honour, awarded posthumously." data-hi="मरणोपरांत देश का सर्वोच्च नागरिक सम्मान।">The country’s highest civilian honour, awarded posthumously.</p></div>
+<div class="card"><h3 data-en="Constitution Day · 26 November" data-hi="संविधान दिवस · 26 नवंबर">Constitution Day · 26 November</h3><p data-en="The first formal Constitution Day was observed on 26 November 2015." data-hi="पहला औपचारिक संविधान दिवस 26 नवंबर 2015 को।">The first formal Constitution Day was observed on 26 November 2015.</p></div>
+<div class="card"><h3 data-en="Students’ Day · 7 November" data-hi="विद्यार्थी दिवस · 7 नवंबर">Students’ Day · 7 November</h3><p data-en="In Maharashtra’s schools, in memory of his school admission." data-hi="महाराष्ट्र के स्कूलों में उनके स्कूल-प्रवेश की याद में।">In Maharashtra’s schools, in memory of his school admission.</p></div>
+<div class="card"><h3 data-en="Worldwide" data-hi="अंतर्राष्ट्रीय स्तर पर">Worldwide</h3><p data-en="Jayanti is held in 65+ countries; his 125th jayanti in 2016 was marked in 102 countries and at the United Nations." data-hi="65+ देशों में जयंती; 2016 में 125वीं जयंती 102 देशों व संयुक्त राष्ट्र में मनी।">Jayanti is held in 65+ countries; his 125th jayanti in 2016 was marked in 102 countries and at the United Nations.</p></div>
+</div>
+<div class="sh rv" style="margin-top:46px"><h2 data-en="Memorials and Symbols" data-hi="स्मारक और प्रतीक" style="font-size:28px">Memorials and Symbols</h2></div>
+<div class="gal rv" id="gal">
+<figure class="fig"><img alt="प्रतिमा" loading="lazy" src="images/i-034.jpg"/><figcaption data-en="Tribute at a statue of Babasaheb" data-hi="बाबासाहेब की प्रतिमा पर श्रद्धांजलि">Tribute at a statue of Babasaheb</figcaption></figure>
+<figure class="fig"><img alt="कांस्य प्रतिमा" loading="lazy" src="images/i-038.jpg"/><figcaption data-en="Bronze statue at the Ambedkar memorial in Lucknow — “My life’s struggle is my message”" data-hi="लखनऊ के आम्बेडकर स्मारक में कांस्य प्रतिमा — “मेरा जीवन संघर्ष ही मेरा संदेश है”">Bronze statue at the Ambedkar memorial in Lucknow — “My life’s struggle is my message”</figcaption></figure>
+<figure class="fig"><img alt="ब्लू प्लाक" loading="lazy" src="images/i-035.jpg"/><figcaption data-en="His London residence — now the ‘International Ambedkar Memorial’" data-hi="लंदन का आवास — अब ‘अंतर्राष्ट्रीय आम्बेडकर मेमोरियल’">His London residence — now the ‘International Ambedkar Memorial’</figcaption></figure>
+<figure class="fig"><img alt="भीम ध्वज" loading="lazy" src="images/i-037.jpg"/><figcaption data-en="‘Jai Bhim’ on the Bhim flag" data-hi="भीम ध्वज पर ‘जय भीम’">‘Jai Bhim’ on the Bhim flag</figcaption></figure>
+<figure class="fig"><img alt="सिक्का" loading="lazy" src="images/i-036.jpg"/><figcaption data-en="Indian commemorative coin dedicated to Ambedkar" data-hi="आम्बेडकर को समर्पित भारतीय स्मारक सिक्का">Indian commemorative coin dedicated to Ambedkar</figcaption></figure>
+<figure class="fig"><img alt="डाक" loading="lazy" src="images/i-033.jpg"/><figcaption data-en="Special postal cover on Ambedkar" data-hi="आम्बेडकर पर विशेष डाक आवरण">Special postal cover on Ambedkar</figcaption></figure>
+<figure class="fig"><img alt="फ़िल्म" loading="lazy" src="images/i-039.jpg"/><figcaption data-en="Poster of the film ‘Dr. Babasaheb Ambedkar’ (2000)" data-hi="फ़िल्म ‘डॉ. बाबासाहेब आम्बेडकर’ (2000) का पोस्टर">Poster of the film ‘Dr. Babasaheb Ambedkar’ (2000)</figcaption></figure>
+</div>
+<div class="txt rv" style="margin-top:26px;max-width:860px">
+<p data-en="&lt;b&gt;Jai Bhim&lt;/b&gt; — this greeting was coined by Babu L.N. Hardas. &lt;b&gt;Blue&lt;/b&gt; stands for equality and the vastness of the sky; the blue flag with the Ashoka Chakra became the identity of the Ambedkarite movement. India Post issued stamps on him in 1966, 1973, 1991, 2001 and 2013; Google made a doodle on 14 April 2015. In 2023 a 125-ft statue was installed in Hyderabad and in 2024 another 125-ft statue in Vijayawada." data-hi="&lt;b&gt;जय भीम&lt;/b&gt; — यह अभिवादन बाबू एल.एन. हरदास ने गढ़ा। &lt;b&gt;नीला रंग&lt;/b&gt; समानता और आकाश की व्यापकता का प्रतीक है; अशोक चक्र वाला नीला झंडा आम्बेडकरवादी आंदोलन की पहचान बन गया। भारतीय डाक ने 1966, 1973, 1991, 2001 और 2013 में उन पर टिकट जारी किए; गूगल ने 14 अप्रैल 2015 को डूडल बनाया। 2023 में हैदराबाद में 125 फीट और 2024 में विजयवाड़ा में 125 फीट ऊँची प्रतिमाएँ स्थापित हुईं।"><b>Jai Bhim</b> — this greeting was coined by Babu L.N. Hardas. <b>Blue</b> stands for equality and the vastness of the sky; the blue flag with the Ashoka Chakra became the identity of the Ambedkarite movement. India Post issued stamps on him in 1966, 1973, 1991, 2001 and 2013; Google made a doodle on 14 April 2015. In 2023 a 125-ft statue was installed in Hyderabad and in 2024 another 125-ft statue in Vijayawada.</p>
+</div>
+</div>
+</section>
+<section class="sec" data-t="स्मरणीय दिवस" id="days">
+<div class="wrap">
+<div class="sh rv"><div class="n">17</div><h2 data-en="Days to Remember" data-hi="स्मरणीय दिवस">Days to Remember</h2></div>
+<div class="txt rv" style="max-width:820px"><p data-en="The key days linked to Babasaheb — and a countdown to the next one." data-hi="बाबासाहेब से जुड़े प्रमुख दिन — और अगले दिन तक की उलटी गिनती।">The key days linked to Babasaheb — and a countdown to the next one.</p></div>
+<div class="grid rv" id="days-grid" style="margin-top:16px"></div>
+</div>
+</section>
+<section class="sec" data-t="क्विज़" id="quiz">
+<div class="wrap">
+<div class="sh rv"><div class="n">18</div><h2 data-en="Test Yourself" data-hi="खुद को परखें">Test Yourself</h2></div>
+<div class="quiz rv" id="quizbox"></div>
+</div>
+</section>
+<section class="sec" data-t="विचार" id="quotes">
+<div class="wrap">
+<div class="sh rv"><div class="n">19</div><h2 data-en="Babasaheb’s Thoughts" data-hi="बाबासाहेब के विचार">Babasaheb’s Thoughts</h2></div>
+<div class="qb rv"><span class="mk">“</span><p id="qt"></p><div class="dots" id="qd"></div></div>
+<div class="txt rv" style="max-width:860px">
+<p data-en="&lt;b&gt;Ambedkarism&lt;/b&gt; is his ideology and philosophy — freedom, equality, fraternity, Buddhism, rationalism, humanism, truth and non-violence are its principles. Its main aims are ending untouchability, social reform among Dalits, protecting the rights in the Constitution, and building an ethical, casteless society." data-hi="&lt;b&gt;आम्बेडकरवाद&lt;/b&gt; उनकी विचारधारा और दर्शन है — स्वतंत्रता, समानता, भाईचारा, बौद्ध धर्म, विज्ञानवाद, मानवतावाद, सत्य और अहिंसा इसके सिद्धांत हैं। इसके प्रमुख उद्देश्य हैं: छुआछूत का अंत, दलितों में सामाजिक सुधार, संविधान में निहित अधिकारों की रक्षा, और नैतिक व जातिमुक्त समाज की रचना।"><b>Ambedkarism</b> is his ideology and philosophy — freedom, equality, fraternity, Buddhism, rationalism, humanism, truth and non-violence are its principles. Its main aims are ending untouchability, social reform among Dalits, protecting the rights in the Constitution, and building an ethical, casteless society.</p>
+</div>
+</div>
+</section>
+</main>
+<div class="jay">
+<div class="wrap"><h2 data-en="Jai Bhim" data-hi="जय भीम">Jai Bhim</h2><h2 data-en="Jai Bharat" data-hi="जय भारत">Jai Bharat</h2><h2 data-en="Jai Samvidhan" data-hi="जय संविधान">Jai Samvidhan</h2></div>
+</div>
+<footer>
+<div class="wrap">
+<div data-en="Babasaheb Dr. Bhimrao Ambedkar" data-hi="बाबासाहेब डॉ. भीमराव आम्बेडकर" style="font-family:var(--head);font-weight:800;font-size:22px">Babasaheb Dr. Bhimrao Ambedkar</div>
+<div class="soc" id="soc"></div>
+<small data-en="Content: based on pages 1–44 of the Hindi Wikipedia article ‘Bhimrao Ambedkar’, under the CC BY-SA licence. Images are taken from that article’s PDF; the “32 degrees” poster was supplied by the user and is not verified by the article." data-hi="सामग्री: हिन्दी विकिपीडिया के ‘भीमराव आम्बेडकर’ लेख (पृष्ठ 1–44) पर आधारित, CC BY-SA लाइसेंस के अंतर्गत। चित्र उसी लेख की PDF से लिए गए हैं; “32 डिग्रियाँ” पोस्टर उपयोगकर्ता द्वारा दिया गया है और लेख से सत्यापित नहीं है।">Content: based on pages 1–44 of the Hindi Wikipedia article ‘Bhimrao Ambedkar’, under the CC BY-SA licence. Images are taken from that article’s PDF; the “32 degrees” poster was supplied by the user and is not verified by the article.</small>
+<small data-en="Jai Bhim · Jai Bharat · Jai Samvidhan" data-hi="जय भीम · जय भारत · जय संविधान">Jai Bhim · Jai Bharat · Jai Samvidhan</small>
+</div>
+</footer>
+<button aria-label="ऊपर जाएँ" id="top">↑</button>
+<div aria-modal="true" id="lb" role="dialog"><button aria-label="बंद" class="x">×</button><button aria-label="पिछला" class="pv">‹</button><img alt=""/><p></p><button aria-label="अगला" class="nx">›</button></div>
+<script>
+(function(){
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var LANG='en';try{var sv=localStorage.getItem('lang');if(sv=='hi'||sv=='en')LANG=sv}catch(e){}
+function T(en,hi){return LANG=='hi'?hi:en}
+var HM=['जनवरी','फ़रवरी','मार्च','अप्रैल','मई','जून','जुलाई','अगस्त','सितंबर','अक्टूबर','नवंबर','दिसंबर'],EM=['January','February','March','April','May','June','July','August','September','October','November','December'];
+/* spokes */
+function spokes(id){var g=$(id),h='',c=id=='#spk'?[32,6,27,'32 32']:[320,40,284,'320 320'];for(var i=0;i<24;i++){h+='<line x1="'+c[0]+'" y1="'+c[1]+'" x2="'+c[0]+'" y2="'+c[2]+'" transform="rotate('+(i*15)+' '+c[3]+')"/>'}g.innerHTML=h}
+spokes('#spk');spokes('#spk2');
+var SOC=[{n:'YouTube',u:'https://www.youtube.com/@bhimrao_ambedkar-A',i:'<svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>'},
+{n:'Instagram',u:'https://www.instagram.com/jaybhimgreat_68?stkn=MWFsZjJmY2JyaDNqZg==',i:'<svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg>'},
+{n:'Facebook',u:'https://www.facebook.com/profile.php?id=61591663343197',i:'<svg viewBox="0 0 24 24"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>'}];
+$('#soc').innerHTML=SOC.map(function(s){return '<a href="'+s.u+'" target="_blank" rel="noopener">'+s.i+s.n+'</a>'}).join('');
+$('#msoc').innerHTML=SOC.map(function(s){return '<a class="ml" href="'+s.u+'" target="_blank" rel="noopener"><span>↗</span>'+s.n+'</a>'}).join('');
+/* data */
+var secs=$$('section.sec');
+var SEN={intro:'Introduction',early:'Early Life',edu:'Education',degrees:'Degrees',struggle:'Fight Against Untouchability',poona:'Round Tables & Poona Pact',politics:'Political Life',constitution:'Making the Constitution',dhamma:'Conversion & Buddhist Dhamma',economics:'Economics',timeline:'Timeline',personal:'Personal Life',books:'Books',press:'Journalism',death:'Mahaparinirvan',legacy:'Legacy',days:'Days to Remember',quiz:'Quiz',quotes:'Quotes'};
+var DEG=[
+['1912','B.A.','University of Bombay','Economics and political science','बी.ए. (कला स्नातक)','बॉम्बे विश्वविद्यालय','अर्थशास्त्र व राजनीतिक विज्ञान'],
+['1915','M.A.','Columbia University, New York','Major in economics; research: Ancient Indian Commerce','एम.ए. (कला स्नातकोत्तर)','कोलंबिया विश्वविद्यालय, न्यूयॉर्क','मुख्य विषय अर्थशास्त्र; शोध: प्राचीन भारतीय वाणिज्य'],
+['1916/27','Ph.D. (Economics)','Columbia University','Evolution of Provincial Finance in British India — thesis 1916, degree formally conferred 1927','पीएच.डी. (अर्थशास्त्र)','कोलंबिया विश्वविद्यालय','ब्रिटिश भारत में प्रांतीय वित्त का विकास — 1916 में शोध, 1927 में औपचारिक उपाधि'],
+['1921','M.Sc.','London School of Economics','Provincial Decentralisation of Imperial Finance in British India','एम.एससी.','लंदन स्कूल ऑफ इकोनॉमिक्स','प्रोविन्शियल डीसेन्ट्रलाइज़ेशन ऑफ इम्पीरियल फाइनेंस इन ब्रिटिश इंडिया'],
+['1922','Barrister-at-Law','Gray’s Inn, London','Called to the British Bar','बैरिस्टर-एट-लॉ','ग्रेज़ इन, लंदन','ब्रिटिश बार में प्रवेश'],
+['1923','D.Sc. (Doctor of Science)','London School of Economics','Thesis: The Problem of the Rupee — Its Origin and Its Solution','डी.एससी. (डॉक्टर ऑफ साइंस)','लंदन स्कूल ऑफ इकोनॉमिक्स','थीसिस: द प्रॉब्लम ऑफ द रुपी — इट्स ओरिजिन एंड इट्स सॉल्यूशन'],
+['1952','LL.D. (honorary)','Columbia University','Honorary degree','एलएल.डी. (सम्मानित)','कोलंबिया विश्वविद्यालय','मानद उपाधि'],
+['1953','D.Litt. (honorary)','Osmania University','Honorary degree','डी.लिट. (सम्मानित)','उस्मानिया विश्वविद्यालय','मानद उपाधि']];
+var CATS=[['all','All','सभी'],['life','Life','जीवन'],['edu','Education','शिक्षा'],['fight','Struggle','संघर्ष'],['pol','Politics','राजनीति'],['dhamma','Dhamma','धम्म']];
+var TLD=[
+[1891,'Birth — Mhow','Born 14 April 1891 in the Mhow cantonment; 14th child of Ramji Sakpal and Bhimabai.','जन्म — महू','14 अप्रैल 1891 को महू छावनी में; रामजी सकपाल और भीमाबाई की 14वीं संतान।','life'],
+[1900,'Enters school','7 November 1900, Government High School, Satara; today ‘Students’ Day’.','स्कूल में प्रवेश','7 नवंबर 1900 को सातारा के हाईस्कूल में; आज ‘विद्यार्थी दिवस’।','edu'],
+[1906,'Marriage','Married Ramabai in April 1906.','विवाह','अप्रैल 1906 में रमाबाई से।','life'],
+[1912,'B.A.','From the University of Bombay in economics and political science.','बी.ए.','बॉम्बे विश्वविद्यालय से अर्थशास्त्र और राजनीतिक विज्ञान में।','edu'],
+[1915,'M.A. — Columbia','June 1915; economics as the major.','एम.ए. — कोलंबिया','जून 1915 में; अर्थशास्त्र मुख्य विषय।','edu'],
+[1920,'Mooknayak','First fortnightly paper, 31 January 1920.','मूकनायक','31 जनवरी 1920 को पहला पाक्षिक पत्र।','fight'],
+[1921,'M.Sc. — London','From the London School of Economics.','एम.एससी. — लंदन','लंदन स्कूल ऑफ इकोनॉमिक्स से।','edu'],
+[1922,'Barrister','Gray’s Inn conferred the Barrister-at-Law degree.','बैरिस्टर','ग्रेज़ इन ने बैरिस्टर-एट-लॉ उपाधि दी।','edu'],
+[1923,'D.Sc.','For the thesis ‘The Problem of the Rupee’.','डी.एससी.','‘द प्रॉब्लम ऑफ द रुपी’ थीसिस पर।','edu'],
+[1927,'Mahad Satyagraha · Manusmriti burning','Satyagraha at the Chavdar Tank; copies of the Manusmriti burnt on 25 December.','महाड़ सत्याग्रह · मनुस्मृति दहन','चवदार जलाशय का सत्याग्रह; 25 दिसंबर को मनुस्मृति की प्रतियाँ जलाईं।','fight'],
+[1930,'Kalaram Temple Satyagraha','About 15,000 volunteers at Nashik.','कालाराम मंदिर सत्याग्रह','नाशिक में लगभग 15,000 स्वयंसेवक।','fight'],
+[1932,'Poona Pact','24 September 1932, Yerwada jail — reserved seats from 78 to 148.','पूना पैक्ट','24 सितंबर 1932, यरवदा जेल — आरक्षित सीटें 78 से 148।','pol'],
+[1935,'Rajgruha · Yeola declaration','Rajgruha built in Mumbai; on 13 October he announced his conversion; Ramabai died on 27 May.','राजगृह · येवला घोषणा','मुंबई में राजगृह; 13 अक्टूबर को धर्म परिवर्तन की घोषणा; 27 मई को रमाबाई का निधन।','dhamma'],
+[1936,'Annihilation of Caste','15 May — ‘Annihilation of Caste’; Independent Labour Party founded.','जाति का विनाश','15 मई — ‘एनीहिलेशन ऑफ कास्ट’; स्वतंत्र लेबर पार्टी की स्थापना।','pol'],
+[1942,'Labour Member','Scheduled Castes Federation; 1942–46 Labour Member in the Viceroy’s Council.','श्रम मंत्री','शेड्यूल्ड कास्ट्स फेडरेशन; 1942–46 वायसराय की परिषद में श्रम मंत्री।','pol'],
+[1947,'Law Minister · Drafting Committee','15 August first Law Minister; 29 August Chairman of the Drafting Committee.','कानून मंत्री · मसौदा समिति','15 अगस्त को प्रथम कानून मंत्री; 29 अगस्त को मसौदा समिति अध्यक्ष।','pol'],
+[1949,'Constitution adopted','26 November 1949.','संविधान अपनाया गया','26 नवंबर 1949।','pol'],
+[1951,'Hindu Code Bill','Resigned from the Cabinet when the bill was blocked.','हिंदू कोड बिल','बिल रुकने पर मंत्रिमंडल से इस्तीफ़ा।','pol'],
+[1952,'Rajya Sabha','Member of the Rajya Sabha from March 1952.','राज्यसभा','मार्च 1952 में राज्यसभा के सदस्य।','pol'],
+[1956,'Buddhist Dhamma diksha','14 October, Nagpur — the 22 vows; Mahaparinirvan on 6 December.','बौद्ध धम्म दीक्षा','14 अक्टूबर, नागपुर — 22 प्रतिज्ञाएँ; 6 दिसंबर को महापरिनिर्वाण।','dhamma'],
+[1990,'Bharat Ratna','Highest civilian honour, awarded posthumously.','भारत रत्न','मरणोपरांत सर्वोच्च नागरिक सम्मान।','life']];
+var TG=[['Educate, Organise, Agitate','Knowledge is the greatest power','My life’s struggle is my message'],['शिक्षित बनो, संघटित बनो, संघर्ष करो','ज्ञान शक्ति सबसे महान है','मेरा जीवन संघर्ष ही मेरा संदेश है']];
+var QT=[['The importance of education for success in life is immense.','जीवन में सफलता पाने के लिए शिक्षा का महत्व अपार है।'],['Knowledge is the greatest power.','ज्ञान शक्ति सबसे महान है।'],['Religion teaches how to live, but social science teaches how to sustain religion.','धर्म तो यह सिखाता है कि कैसे जीना है, लेकिन सामाजिक विज्ञान यह सिखाता है कि कैसे धर्म को बनाए रखना है।'],['Great results come from great efforts.','उत्तम परिणाम उत्तम प्रयासों से होते हैं।'],['One who is humiliated in society cannot be a true patriot.','जो समाज में अपमानित है, वह वास्तविक देश भक्त नहीं हो सकता।'],['Untouchability is worse than slavery.','छुआछूत गुलामी से भी बदतर है।'],['My life’s struggle is my message.','मेरा जीवन संघर्ष ही मेरा संदेश है।']];
+var DAYS=[[4,14,'Ambedkar Jayanti','Birth anniversary (14 April 1891), celebrated across India and the world.','आम्बेडकर जयंती','जन्मदिवस (14 अप्रैल 1891) — भारत समेत दुनिया भर में मनाया जाता है।'],
+[10,14,'Dhamma Chakra Pravartan Day','The day in 1956 he embraced Buddhism at Nagpur with lakhs of followers.','धम्मचक्र प्रवर्तन दिवस','1956 में नागपुर में लाखों अनुयायियों के साथ बौद्ध धर्म ग्रहण का दिन।'],
+[11,7,'Students’ Day','His first day at school in 1900 — observed in Maharashtra’s schools.','विद्यार्थी दिवस','1900 में स्कूल का पहला दिन — महाराष्ट्र के स्कूलों में मनाया जाता है।'],
+[11,26,'Constitution Day','The Constituent Assembly adopted the Constitution on this day in 1949.','संविधान दिवस','1949 में इसी दिन संविधान सभा ने संविधान अपनाया।'],
+[12,6,'Mahaparinirvan Diwas','Remembering his passing in 1956; tributes at Chaityabhoomi, Mumbai.','महापरिनिर्वाण दिवस','1956 में उनके निधन की स्मृति; चैत्यभूमि, मुंबई में श्रद्धांजलि।'],
+[12,25,'Manusmriti Dahan Diwas','Marks the burning of the Manusmriti at Mahad in 1927.','मनुस्मृति दहन दिवस','1927 में महाड़ में मनुस्मृति दहन की स्मृति।']];
+var PD=['Bachelor of Art (B.A)','Master Of Art (M.A)','Master of Science (M.Sc)','Bachelor of Laws (L.L.B)','Doctor of Philosophy (Ph.D)','Doctor of Science (D.Sc)','Doctor Of Literature (D.Litt)','Barrister-at-Law (B.L)','Master of Laws (L.L.M)','M.A In Economics','M.Sc In Economics','M.A In Sociology','M.Sc In Sociology','M.A In History','M.A In Philosophy','M.A In Politics','M.A In Anthropology','M.A In Psychology','M.A In English Literature','M.A In German','M.A In Public Administration','M.A In Economics','M.A In Mathematics','M.A In Linguistic','M.A In Comparative Religion','M.A In Labour Economics','M.A In Law And Justice','M.A In International Law','M.A In Sociology In Religion','M.A In International Econ.','M.A In Political Science','M.A In Econ. Of Industry'];
+var BK=['Administration and Finance of the East India Company (M.A. thesis)','The Evolution of Provincial Finance in British India (Ph.D. thesis, 1925)','The Problem of the Rupee: Its Origin and Its Solution (D.Sc., 1923)','Annihilation of Caste (1936)','Which Way to Emancipation (1936)','Federation versus Freedom (1936)','Thoughts on Pakistan / Pakistan or the Partition of India (1940)','Ranade, Gandhi and Jinnah (1943)','Mr. Gandhi and the Emancipation of the Untouchables (1945)','What Congress and Gandhi Have Done to the Untouchables? (1945)','Communal Deadlock and a Way to Solve It (1946)','Who Were the Shudras? (1946)','Cabinet Mission proposals — critique (1946)','The Cabinet Mission and the Untouchables (1946)','States and Minorities (1947)','Maharashtra as a Linguistic Province (1948)','The Untouchables: Who Were They and Why They Became Untouchables (1948)','Thoughts on Linguistic States (1955)','The Buddha and His Dhamma (1957)','Riddles in Hinduism','Dictionary of the Pali Language (Pali–English)','The Pali Grammar','Waiting for a Visa (autobiography)','A People at Bay','The Untouchables and the Children of India’s Ghettos','Can I Be a Hindu?','What the Brahmins Have Done to the Hindus','Essays on the Bhagavad Gita','India and Communism','Revolution and Counter-Revolution in Ancient India','The Buddha and Karl Marx','Constitution and Constitutionalism'];
+var QZ=[
+[['Where was Ambedkar born?','आम्बेडकर का जन्म कहाँ हुआ?'],[['Satara','सातारा'],['Mhow','महू'],['Nagpur','नागपुर'],['Pune','पुणे']],1,['He was born on 14 April 1891 in the Mhow cantonment (now in Madhya Pradesh).','उनका जन्म 14 अप्रैल 1891 को महू छावनी (अब मध्य प्रदेश) में हुआ।']],
+[['When did the Constituent Assembly adopt the Constitution?','संविधान सभा ने संविधान कब अपनाया?'],[['15 August 1947','15 अगस्त 1947'],['26 January 1950','26 जनवरी 1950'],['26 November 1949','26 नवंबर 1949'],['29 August 1947','29 अगस्त 1947']],2,['Adopted on 26 November 1949 — celebrated as Constitution Day.','26 नवंबर 1949 को अपनाया गया — इसे संविधान दिवस के रूप में मनाया जाता है।']],
+[['Which committee did he chair?','वे किस समिति के अध्यक्ष थे?'],[['Drafting Committee','मसौदा समिति'],['Simon Commission','साइमन कमीशन'],['Hilton Young Commission','हिल्टन यंग कमीशन'],['Southborough Committee','साउथबरो समिति']],0,['He was appointed Chairman of the Drafting Committee on 29 August 1947.','29 अगस्त 1947 को वे मसौदा समिति के अध्यक्ष नियुक्त हुए।']],
+[['The Poona Pact raised reserved seats from 78 to…?','पूना पैक्ट में आरक्षित सीटें 78 से बढ़कर कितनी हुईं?'],[['100','100'],['148','148'],['200','200'],['71','71']],1,['Reserved seats were increased to 148.','आरक्षित सीटें बढ़ाकर 148 कर दी गईं।']],
+[['What was the name of his first newspaper (1920)?','उनके पहले अखबार (1920) का नाम क्या था?'],[['Janata','जनता'],['Samata','समता'],['Bahishkrit Bharat','बहिष्कृत भारत'],['Mooknayak','मूकनायक']],3,['Mooknayak, first issue on 31 January 1920.','मूकनायक, पहला अंक 31 जनवरी 1920।']],
+[['Where did he embrace Buddhism on 14 October 1956?','14 अक्टूबर 1956 को उन्होंने कहाँ बौद्ध धर्म अपनाया?'],[['Nagpur','नागपुर'],['Mumbai','मुंबई'],['Delhi','दिल्ली'],['Lucknow','लखनऊ']],0,['At Nagpur — the ground is now called Deekshabhoomi.','नागपुर में — यह भूमि अब दीक्षाभूमि कहलाती है।']],
+[['The founding of which institution is linked to his ideas?','उनके विचारों से किस संस्था की स्थापना जुड़ी है?'],[['Supreme Court','सर्वोच्च न्यायालय'],['Reserve Bank of India','भारतीय रिज़र्व बैंक'],['Planning Commission','योजना आयोग'],['Election Commission','चुनाव आयोग']],1,['The RBI was based on his ideas submitted to the Hilton Young Commission.','RBI उनके उन विचारों पर आधारित थी जो उन्होंने हिल्टन यंग कमीशन को दिए।']]];
+/* render: sections/menu */
+function renderMenu(){
+ secs.forEach(function(s){s.dataset.te=SEN[s.id]||s.dataset.t});
+ $('#mlist').innerHTML='<a class="ml" href="#home"><span>🏠</span>'+T('Home','होम')+'</a>'+secs.map(function(s,i){return '<a class="ml" href="#'+s.id+'"><span>'+(i<9?'0':'')+(i+1)+'</span>'+(LANG=='hi'?s.dataset.t:s.dataset.te)+'</a>'}).join('');
+ $('#mdeg').innerHTML=DEG.map(function(d,i){return '<a href="#degrees" data-deg="'+i+'"><span>'+(LANG=='hi'?d[4]:d[1])+'</span><b>'+d[0]+'</b></a>'}).join('');
+ var sel=$('#ladder'),keep=$$('.dc.hl',sel).length;
+ sel.innerHTML=DEG.map(function(d,i){return '<div class="dc rv in" id="dc'+i+'"><div class="yr">'+d[0]+'</div><div class="bd"><h3>'+(LANG=='hi'?d[4]:d[1])+'</h3><div class="in">'+(LANG=='hi'?d[5]:d[2])+'</div><p>'+(LANG=='hi'?d[6]:d[3])+'</p></div></div>'}).join('');
+ spy();
+}
+function renderTL(){
+ var cur=($('#tfl button.on')||{dataset:{c:'all'}}).dataset.c;
+ $('#tfl').innerHTML=CATS.map(function(c){return '<button'+(c[0]==cur?' class="on"':'')+' data-c="'+c[0]+'">'+(LANG=='hi'?c[2]:c[1])+'</button>'}).join('');
+ $('#tl').innerHTML=TLD.map(function(e){return '<div class="ev'+(cur!='all'&&e[5]!=cur?' hide':'')+'" data-c="'+e[5]+'"><h4><b>'+e[0]+'</b>'+(LANG=='hi'?e[3]:e[1])+'</h4><p>'+(LANG=='hi'?e[4]:e[2])+'</p></div>'}).join('');
+}
+$('#tl').addEventListener('click',function(e){var ev=e.target.closest('.ev');if(ev)ev.classList.toggle('open')});
+$('#tfl').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;$$('#tfl button').forEach(function(x){x.classList.toggle('on',x==b)});$$('#tl .ev').forEach(function(ev){ev.classList.toggle('hide',b.dataset.c!='all'&&ev.dataset.c!=b.dataset.c)})});
+function dl(q){q=(q||'').toLowerCase();$('#dlist').innerHTML=PD.map(function(d,i){return d.toLowerCase().indexOf(q)>-1?'<div><b>'+(i+1)+'</b>'+d+'</div>':''}).join('')||'<p style="color:var(--mute)">'+T('No results','कोई परिणाम नहीं')+'</p>'}
+function bl(q){q=(q||'').toLowerCase();$('#blist').innerHTML=BK.map(function(d,i){return d.toLowerCase().indexOf(q)>-1?'<div><b>'+(i+1)+'.</b><span>'+d+'</span></div>':''}).join('')||'<p style="color:var(--mute)">'+T('No results','कोई परिणाम नहीं')+'</p>'}
+$('#dsearch').oninput=function(){dl(this.value)};$('#bsearch').oninput=function(){bl(this.value)};
+function renderDays(){
+ var now=new Date(),t0=new Date(now.getFullYear(),now.getMonth(),now.getDate()),arr=DAYS.map(function(d){var x=new Date(t0.getFullYear(),d[0]-1,d[1]);if(x<t0)x=new Date(t0.getFullYear()+1,d[0]-1,d[1]);return {d:d,n:Math.round((x-t0)/864e5)}}).sort(function(a,b){return a.n-b.n});
+ $('#days-grid').innerHTML=arr.map(function(o){var d=o.d,n=o.n,c=n==0?T('Today','आज'):n==1?T('Tomorrow','कल'):T('in '+n+' days',n+' दिन बाकी');
+  return '<div class="card dcd'+(n==0?' today':'')+'"><span class="dt">'+d[1]+' '+(LANG=='hi'?HM[d[0]-1]:EM[d[0]-1]).toUpperCase()+'</span><h3>'+(LANG=='hi'?d[4]:d[2])+'</h3><p>'+(LANG=='hi'?d[5]:d[3])+'</p><span class="cd">'+c+'</span></div>'}).join('');
+}
+/* quiz */
+var qi=0,qs=0,qa=false;
+function renderQuiz(){
+ var b=$('#quizbox');
+ if(qi>=QZ.length){var pct=qs/QZ.length;b.innerHTML='<div class="res"><div class="big">'+qs+' / '+QZ.length+'</div><h3>'+(pct>=.85?T('Excellent! A true student of Babasaheb.','शानदार! आप बाबासाहेब के सच्चे विद्यार्थी हैं।'):pct>=.5?T('Good work! Explore the sections to learn more.','अच्छा! और जानने के लिए सेक्शन पढ़ें।'):T('Keep reading — the story is worth it.','पढ़ते रहिए — यह कहानी पढ़ने लायक है।'))+'</h3><button class="btn p nb" id="qr">'+T('Try again','फिर से खेलें')+'</button></div>';$('#qr').onclick=function(){qi=0;qs=0;renderQuiz()};return}
+ var q=QZ[qi];
+ b.innerHTML='<div class="qh"><span>'+T('Question','प्रश्न')+' '+(qi+1)+' / '+QZ.length+'</span><span>'+T('Score','अंक')+': '+qs+'</span></div><div class="qbar"><i style="width:'+(qi/QZ.length*100)+'%"></i></div><h3>'+q[0][LANG=='hi'?1:0]+'</h3>'+q[1].map(function(o,i){return '<button class="op" data-i="'+i+'">'+o[LANG=='hi'?1:0]+'</button>'}).join('')+'<div class="ex" id="qex"></div>';
+ qa=false;
+}
+$('#quizbox').addEventListener('click',function(e){
+ var o=e.target.closest('.op');if(!o||qa)return;qa=true;var q=QZ[qi],i=+o.dataset.i;
+ $$('.op',this).forEach(function(x,k){x.disabled=true;if(k==q[2])x.classList.add('ok')});
+ if(i==q[2])qs++;else o.classList.add('no');
+ $('#qex').innerHTML=(i==q[2]?'✅ ':'❌ ')+q[3][LANG=='hi'?1:0]+'<br><button class="btn p nb" id="qn">'+(qi+1<QZ.length?T('Next →','अगला →'):T('See result','परिणाम देखें'))+'</button>';
+ $('#qn').onclick=function(){qi++;renderQuiz()};
+});
+/* menu behaviour */
+var menu=$('#menu'),scrim=$('#scrim'),mb=$('#menuBtn');
+function openM(o){menu.classList.toggle('on',o);scrim.classList.toggle('on',o);mb.classList.toggle('open',o);mb.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+mb.onclick=function(){openM(!menu.classList.contains('on'))};
+$('#mClose').onclick=scrim.onclick=function(){openM(false)};
+$('#dBtn').onclick=function(){go('degrees','verified')};
+function pane(n){$$('.tabs button').forEach(function(b){b.classList.toggle('on',b.dataset.pane==n)});$$('.pane').forEach(function(p){p.classList.toggle('on',p.id=='p-'+n)})}
+$$('.tabs button').forEach(function(b){b.onclick=function(){pane(b.dataset.pane)}});
+function go(id,p){if(p)pane(p);openM(false);setTimeout(function(){var e=document.getElementById(id);e&&e.scrollIntoView({behavior:'smooth'})},50)}
+menu.addEventListener('click',function(e){
+ var a=e.target.closest('a[href^="#"]');if(!a)return;e.preventDefault();var id=a.getAttribute('href').slice(1);
+ if(a.dataset.pane){go(id,a.dataset.pane)}
+ else if(a.dataset.deg!==undefined){pane('verified');go(id);var n=a.dataset.deg;setTimeout(function(){var d=$('#dc'+n);d.classList.add('hl');d.scrollIntoView({behavior:'smooth',block:'center'});setTimeout(function(){d.classList.remove('hl')},2600)},500)}
+ else go(id)});
+/* scroll */
+var prog=$('#prog'),topb=$('#top'),ticking=false;
+function spy(){var cur='#home';secs.forEach(function(s){if(s.getBoundingClientRect().top<window.innerHeight*.4)cur='#'+s.id});$$('#mlist a').forEach(function(a){a.classList.toggle('act',a.getAttribute('href')==cur)})}
+function onS(){ticking=false;var h=document.documentElement,y=h.scrollTop,m=h.scrollHeight-h.clientHeight;prog.style.width=(m>0?y/m*100:0)+'%';topb.classList.toggle('on',y>700);spy()}
+window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onS)}},{passive:true});
+topb.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};
+function count(el){var t=+el.dataset.c,p=el.dataset.p||'',s=null;function f(ts){if(!s)s=ts;var k=Math.min((ts-s)/1400,1);el.textContent=Math.floor(t*(1-Math.pow(1-k,3))).toLocaleString('en-IN')+(k==1?p:'');if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');$$('[data-c]',e.target).forEach(count);io.unobserve(e.target)}})},{threshold:.12});
+ $$('.rv').forEach(function(x){io.observe(x)});}else{$$('.rv').forEach(function(x){x.classList.add('in')});$$('[data-c]').forEach(count)}
+/* typed */
+var tEl=$('#typed'),tTok=0;
+function typer(){var tok=++tTok,ti=0,tj=0,del=false;(function tick(){if(tok!=tTok)return;var a=Array.from(TG[LANG=='hi'?1:0][ti]);if(!del){tj++;tEl.textContent=a.slice(0,tj).join('');if(tj>=a.length){del=true;return void setTimeout(tick,2200)}}else{tj--;tEl.textContent=a.slice(0,tj).join('');if(tj<=0){del=false;ti=(ti+1)%3}}setTimeout(tick,del?28:70)})()}
+function ticker(){var tk='',x=LANG=='hi'?'जय भीम ✦ जय भारत ✦ जय संविधान ✦ ':'Jai Bhim ✦ Jai Bharat ✦ Jai Samvidhan ✦ ';for(var q=0;q<8;q++)tk+=x;$('#tk').textContent=tk+tk}
+/* quotes */
+var qj=0,qt=$('#qt'),qd=$('#qd'),qtm;
+qd.innerHTML=QT.map(function(_,i){return '<button aria-label="'+(i+1)+'"></button>'}).join('');
+function showQ(i,fast){qj=i;qt.style.opacity=0;setTimeout(function(){qt.textContent=QT[i][LANG=='hi'?1:0];qt.style.opacity=1},fast?0:300);$$('button',qd).forEach(function(b,k){b.classList.toggle('on',k==i)});clearTimeout(qtm);qtm=setTimeout(function(){showQ((qj+1)%QT.length)},6500)}
+$$('button',qd).forEach(function(b,k){b.onclick=function(){showQ(k)}});
+/* language */
+function applyLang(l,init){
+ LANG=l;try{localStorage.setItem('lang',l)}catch(e){}
+ document.documentElement.lang=l;
+ $$('[data-hi]').forEach(function(e){e.innerHTML=l=='hi'?e.getAttribute('data-hi'):e.getAttribute('data-en')});
+ $$('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.l==l)});
+ $('#dsearch').placeholder=T('🔎 Search the poster’s list (e.g. Law, Economics, Sociology)','🔎 पोस्टर की सूची में खोजें (जैसे: Law, Economics, Sociology)');
+ $('#bsearch').placeholder=T('🔎 Search books (e.g. Caste, Buddha, Pakistan)','🔎 पुस्तक खोजें (जैसे: Caste, Buddha, Pakistan)');
+ document.title=T('Bhimrao Ambedkar','भीमराव आम्बेडकर');
+ renderMenu();renderTL();dl($('#dsearch').value);bl($('#bsearch').value);renderDays();renderQuiz();showQ(qj,true);typer();ticker();
+ $$('.stat b[data-c]').forEach(function(b){if(b.textContent!='0')count(b)});
+}
+$$('.lang button').forEach(function(b){b.onclick=function(){if(b.dataset.l!=LANG)applyLang(b.dataset.l)}});
+/* lightbox */
+var lb=$('#lb'),lbi=$('img',lb),lbp=$('p',lb),L=[],li=0;
+function mk(){L=$$('.fig img,#posterBtn img')}
+function show(i){li=(i+L.length)%L.length;var im=L[li],f=im.closest('figure');lbi.src=im.currentSrc||im.src;lbp.textContent=f&&$('figcaption',f)?$('figcaption',f).textContent:im.alt}
+function openL(im){mk();show(L.indexOf(im));lb.classList.add('on');document.body.style.overflow='hidden'}
+function closeL(){lb.classList.remove('on');document.body.style.overflow=''}
+document.addEventListener('click',function(e){var im=e.target.closest&&e.target.closest('.fig img,#posterBtn');if(im){if(im.id=='posterBtn')im=im.querySelector('img');openL(im)}});
+$('.x',lb).onclick=closeL;$('.pv',lb).onclick=function(){show(li-1)};$('.nx',lb).onclick=function(){show(li+1)};
+lb.onclick=function(e){if(e.target==lb)closeL()};
+document.addEventListener('keydown',function(e){if(lb.classList.contains('on')){if(e.key=='Escape')closeL();if(e.key=='ArrowLeft')show(li-1);if(e.key=='ArrowRight')show(li+1)}else if(e.key=='Escape')openM(false)});
+applyLang(LANG,true);onS();
+})();
+</script>
+
+
+</body>
+</html>
